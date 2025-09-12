@@ -1,0 +1,85 @@
+🎭 What is Polymorphism?
+-------------------------
+The word Polymorphism comes from Greek:
+    - Poly = many
+    - Morph = forms
+
+👉 In Java, Polymorphism means the ability of an object to take many forms.
+Or simply: One method, different implementations.
+
+
+
+🔑 Types of Polymorphism in Java
+--------------------------------
+Java supports two main types:
+    - Compile-time Polymorphism (a.k.a. Method Overloading)
+    - Runtime Polymorphism (a.k.a. Method Overriding)
+
+
+1️⃣ Compile-Time Polymorphism (Method Overloading)
+-----------------------------------------------------
+- Achieved when multiple methods have the same name but different parameter lists.
+- The method to be called is decided at compile time.
+- Based on:
+    - Number of parameters
+    - Type of parameters
+    - Order of parameters
+
+
+2️⃣ Runtime Polymorphism (Method Overriding)
+-------------------------------------------
+- Achieved when a subclass provides a specific implementation of a method that is already defined in its parent class.
+- The method to be called is decided at runtime (dynamic method dispatch).
+- Needs inheritance and overriding.
+
+
+
+
+🔍 Special Forms of Polymorphism
+--------------------------------------
+Apart from the main two, Java also shows polymorphism in:
+
+➝ Operator Overloading (Limited in Java)
+- In Java, the + operator is overloaded:
+    - Numbers → performs addition
+    - Strings → performs concatenation
+
+➝ Polymorphism with Interfaces
+- A reference of an interface can point to objects of different classes.
+
+
+
+
+🎯 Why Use Polymorphism?
+------------------------
+✅ Code Reusability → Write generic code, behavior decided at runtime.
+✅ Flexibility & Extensibility → Easily add new classes without changing old code.
+✅ Maintainability → Cleaner and more readable designs.
+✅ Used in frameworks → Example: In Spring, when you inject an interface, actual bean is decided at runtime.
+
+
+
+
+
+⚖️ Method Overloading vs Method Overriding
+===========================================
+Feature	                    Method Overloading (Compile-time)	            Method Overriding (Runtime)
+-------------------------------------------------------------------------------------------------------------------------------
+Binding	                    Early Binding	                                Late Binding
+Inheritance Required?	    ❌ No	                                        ✅ Yes
+Parameters	                Must be different	                            Must be same
+Return Type	                Can be different                                (but compatible)	Must be same (or covariant)
+Access Modifier	            Can be anything	                                Cannot reduce visibility
+Exception Handling	        Can throw any	                                Cannot throw new/broader checked exceptions
+
+
+
+🎯 Real-Life Analogy
+---------------------
+👉 Think of polymorphism as a person having multiple roles:
+    - At home → Father
+    - At office → Employee
+    - At market → Customer
+Same person, but different forms/behaviors depending on the situation.
+
+
