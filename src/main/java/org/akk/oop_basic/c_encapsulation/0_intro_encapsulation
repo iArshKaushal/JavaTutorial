@@ -1,0 +1,5 @@
+
+Encapsulation
+--------------
+- Wrapping data (fields) and methods into a single unit (class).
+- Use private fields and public getters/setters to control access.

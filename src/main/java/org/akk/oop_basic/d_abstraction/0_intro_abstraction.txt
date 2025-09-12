@@ -1,0 +1,47 @@
+Abstraction
+-------------
+Abstraction is the process of hiding the implementation details of a class and showing only the essential features to the user.
+👉 Focus on what an object does, not how it does it.
+
+    - Hiding implementation details, showing only essential behavior.
+    - Achieved using abstract classes and interfaces.
+
+
+🔑 Key Points
+-----------------
+    - Abstraction is achieved using:
+        - Abstract Classes
+        - Interfaces
+    - You cannot create objects of abstract classes or interfaces.
+    - Subclasses must provide implementations for abstract methods.
+
+
+🎯 Real Life Analogy of Abstraction
+----------------------------------------
+    - Think about a TV remote:
+        - You press power button → TV turns ON.
+        - You don’t care about how circuits inside work.
+That’s abstraction → show functionality, hide complexity.
+
+
+📦 Advantages of Abstraction
+-------------------------------------------------------
+✅ Hides implementation details → Cleaner design.
+✅ Supports security → Only expose required features.
+✅ Increases code reusability → Define "what", different classes decide "how".
+✅ Helps achieve loose coupling → Important in frameworks like Spring.
+
+
+🔍 Difference Between Abstract Class and Interface
+---------------------------------------------------
+Abstract Class:
+Can have abstract + concrete methods
+Supports single inheritance
+Can have fields (instance variables)
+When you want some default behavior + abstraction
+
+Interface:
+Methods are abstract by default (Java 7), but from Java 8 onward, can have default & static methods
+Supports multiple inheritance
+Can only have public static final constants
+When you want only contract/blueprint

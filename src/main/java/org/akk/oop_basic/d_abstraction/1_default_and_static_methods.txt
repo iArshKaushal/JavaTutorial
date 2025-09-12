@@ -1,0 +1,61 @@
+🔑 Default & Static Methods in Interfaces (Java 8+)
+---------------------------------------------------------
+
+Traditionally (before Java 8), interfaces in Java could only have:
+    - Abstract methods (method without a body)
+    - Constants (public static final variables)
+
+But from Java 8 onward, interfaces can also have:
+    - Default methods (with default keyword)
+    - Static methods (with static keyword)
+
+
+1️⃣ Default Methods in Interfaces
+---------------------------------
+
+- Declared with the default keyword.
+- Have a method body inside an interface.
+- Provide a default implementation that classes can either:
+    - Use as-is
+    - Or override if needed
+
+👉 Useful for interface evolution (adding new methods without breaking old code).
+
+
+
+2️⃣ Static Methods in Interfaces
+-------------------------------
+- Declared with the static keyword.
+- Belong to the interface itself, not the instance.
+- Called using the interface name.
+- Cannot be overridden by implementing classes.
+
+
+⚖️ Difference Between Default and Static Methods
+=================================================
+
+Feature	            Default Method                          Static Method
+---------------------------------------------------------------------------
+Declared with	    default	                                static
+Can be overridden?  ✅ Yes	                                ❌ No
+Called using	    Object reference                        Interface name
+Purpose	            Provide default behavior to classes	    Provide utility/helper methods
+
+
+
+🎯 Why Were These Added?
+-------------------------
+
+Default methods: To allow adding new methods to interfaces without breaking existing implementations.
+    - Example: Iterable.forEach() was added in Java 8 as a default method.
+
+Static methods: To allow utility/helper methods inside interfaces instead of separate utility classes.
+    -Example: Comparator.comparing() is a static method in Comparator interface.
+
+
+
+
+
+
+
+

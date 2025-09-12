@@ -5,15 +5,40 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="33d39792-1fba-49b3-abc0-1cfea40606da" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/akk/oop_basic/a_classes/Car.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/akk/oop_basic/b_objects/ObjectExample.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/akk/oop_basic/c_encapsulation/0_intro_encapsulation" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/akk/oop_basic/c_encapsulation/EncapsulationExample.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/akk/oop_basic/d_abstraction/0_intro_abstraction.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/akk/oop_basic/d_abstraction/1_default_and_static_methods.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/akk/oop_basic/d_abstraction/abstractclass_example/AbstractClassExample.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/akk/oop_basic/d_abstraction/interface_example/InterfaceDefaultMethodExample.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/akk/oop_basic/d_abstraction/interface_example/InterfaceExample.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/akk/oop_basic/d_abstraction/interface_example/InterfaceStaticMethodExample.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
+  <component name="ComposerSettings">
+    <execution />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="MarkdownSettingsMigration">
+    <option name="stateVersion" value="1" />
   </component>
   <component name="ProjectId" id="32ZrHY78iE5oydEcc4toCZyRreM" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
@@ -26,10 +51,23 @@
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "WebServerToolWindowFactoryState": "false",
-    "git-widget-placeholder": "master",
+    "dart.analysis.tool.window.visible": "false",
+    "last_opened_file_path": "C:/Users/iarsh/Downloads/LearnSpringFramework-master/0JavaProjects/JavaTutorial",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm",
+    "settings.editor.selected.configurable": "project.propVCSSupport.DirectoryMappings",
     "vue.rearranger.settings.migration": "true"
   }
 }]]></component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\iarsh\Downloads\LearnSpringFramework-master\0JavaProjects\JavaTutorial\src\main\java\org\akk\oop_basic\d_abstraction" />
+      <recent name="C:\Users\iarsh\Downloads\LearnSpringFramework-master\0JavaProjects\JavaTutorial\src\main\java\org\akk" />
+    </key>
+  </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
@@ -39,7 +77,22 @@
       <option name="presentableId" value="Default" />
       <updated>1757638850105</updated>
       <workItem from="1757638851384" duration="2000" />
+      <workItem from="1757651875435" duration="7430000" />
     </task>
     <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
   </component>
 </project>
