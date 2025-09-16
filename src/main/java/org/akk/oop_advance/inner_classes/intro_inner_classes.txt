@@ -1,0 +1,55 @@
+🔑 What are Inner Classes in Java?
+------------------------------------------
+An inner class is a class defined inside another class.
+👉 It is logically grouped with its outer class.
+👉 Used to bind the two together, increase encapsulation, and make code more readable.
+
+
+
+🏗️ Types of Inner Classes
+---------------------------
+1. Member Inner Class
+    - Defined inside a class but outside any method.
+    - Has access to all members (including private) of the outer class.
+✅ Used when inner class is closely related to outer class functionality.
+
+
+
+
+
+2. Static Nested Class
+--------------------------------------
+    - Declared with static keyword.
+    - Cannot access instance members of the outer class directly.
+    - Can only access static members of the outer class.
+
+✅ Often used as helper classes (like Map.Entry inside Map).
+
+
+
+
+
+3. Local Inner Class
+-------------------------------------------
+    - Declared inside a method, constructor, or block.
+    - Can access final or effectively final variables of the enclosing scope.
+✅ Useful for method-specific logic.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
