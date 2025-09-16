@@ -1,4 +1,4 @@
-package org.akk.oop_basic.f_polymorphism;
+package org.akk.oop_basic.f_polymorphism.compile_time;
 
 /** Compile Time Polymorphism
  * using method overloading

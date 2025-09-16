@@ -1,0 +1,80 @@
+🔗 1. Association
+-------------------------
+👉 Association is the general relationship between two classes.
+
+- It represents how objects are related to each other.
+- It can be:
+    - One-to-One (e.g., Person ↔ Passport)
+    - One-to-Many (e.g., Teacher ↔ Students)
+    - Many-to-One (e.g., Many Employees ↔ One Company)
+    - Many-to-Many (e.g., Student ↔ Course)
+
+📌 Key point:
+- Objects are independent (life cycle not tied).
+- Either can exist without the other.
+
+Example:
+--------------
+- Student is associated with Teacher.
+- If the Teacher object is deleted, the Student can still exist (association is loose).
+
+
+
+
+
+
+
+🔗 2. Aggregation (Has-A relationship, Weak Association)
+-----------------------------------------------------------
+👉 Aggregation is a special form of association.
+    - Represents a “Has-A” relationship.
+    - The child object can exist independently of the parent object.
+    - This is a weak relationship.
+
+📌 Example in real life:
+-------------------------
+A Library has Books.
+Even if the library is closed, books may still exist elsewhere.
+
+
+Here, Library has Books. But Books can exist without Library.
+
+
+
+
+
+
+🔗 3. Composition (Has-A relationship, Strong Association)
+-------------------------------------------------------------
+👉 Composition is a stronger form of aggregation.
+    - The child object cannot exist without the parent object.
+    - If the parent is destroyed, child objects are also destroyed.
+    - Strong life cycle dependency.
+
+📌 Example in real life:
+-----------------------
+    - A House has Rooms.
+    - If the House is destroyed, the Rooms no longer exist.
+
+Here:
+    - Car owns Engine.
+    - Without a Car, Engine has no meaning.
+    - If Car is destroyed, Engine is also destroyed.
+
+
+
+
+
+
+⚖️ Difference Between Association, Aggregation, and Composition
+=====================================================================
+
+Concept	            Relationship Type	      Life Cycle Dependency	        Example
+------------------------------------------------------------------------------------------------
+Association	        General relation	      Independent	                Student ↔ Teacher
+Aggregation	        Has-A (Weak)	          Child can exist alone	        Library ↔ Books
+Composition	        Has-A (Strong)	          Child depends on parent	    Car ↔ Engine
+
+
+
+

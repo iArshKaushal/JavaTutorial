@@ -1,0 +1,33 @@
+
+1. Traditional switch (Before Java 12)
+-------------------------------------------
+    - switch was only a statement, not an expression.
+    - You had to use break; to stop fall-through.
+    - It couldn’t directly return a value.
+
+
+⚠ Problems:
+- Lots of repetition (result = ...;).
+- Must remember to use break; (or it falls through).
+
+
+🔹 2. Enhanced switch Expression (Java 12+)
+------------------------------------------------
+    - Can be used as an expression (returns a value).
+    - Supports arrow syntax (->).
+    - No need for break; anymore.
+    - Uses yield when you have a block with multiple statements.
+
+
+
+
+
+✅ Key Differences
+====================
+Feature	            Traditional Switch	            Enhanced Switch
+------------------------------------------------------------------------------
+Return a value	    ❌ No	                        ✅ Yes (expression)
+Fall-through	    ✅ Yes (must use break)	        ❌ No fall-through with ->
+Multiple labels	    Limited (use stacked cases)	    ✅ Supported (case 3,4,5 ->)
+Syntax	            Verbose	                        Concise
+yield keyword	    ❌ Not available	            ✅ Used for block return

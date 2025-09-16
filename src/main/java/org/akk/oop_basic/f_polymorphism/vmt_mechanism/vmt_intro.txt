@@ -1,0 +1,97 @@
+⚙️ How Java Implements Runtime Polymorphism
+---------------------------------------------
+
+When you write:
+    Animal a = new Dog();
+    a.sound(); // which method is called?
+
+👉 At compile time, the compiler only knows that a is of type Animal.
+👉 At runtime, the JVM needs to figure out: should it call Animal.sound() or Dog.sound()?
+
+This is where the Virtual Method Table (VMT) (or vtable) comes in.
+
+
+🔑 What is a Virtual Method Table (VMT)?
+----------------------------------------------
+- A lookup table of function pointers maintained per class.
+- Every class that has virtual (non-static, non-final, non-private) methods gets a VMT.
+- Each entry in the table corresponds to a method.
+- At runtime, the JVM uses the object’s class reference to look up the actual implementation to call.
+
+
+Compilation time:
+-----------------
+- The compiler sees a.sound() and knows sound() exists in Animal. ✅ No error.
+- It does not decide which version to call.
+
+Runtime:
+--------
+- JVM sees a actually points to a Dog object.
+- JVM checks the Dog’s VMT.
+- In Dog’s VMT, the sound() method entry points to Dog.sound().
+- So Dog.sound() is executed.
+
+
+
+📦 Visual Representation of VMT
+======================================
+Animal VMT
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Method Name           |         Pointer To      |
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+sound()	                        Animal.sound()
+
+Dog VMT
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Method Name           |         Pointer To      |
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+sound()	                        Dog.sound()
+
+
+👉 When you create Dog d = new Dog(), the object internally keeps a reference to Dog’s VMT.
+So when you call d.sound(), JVM jumps to the pointer in Dog’s VMT.
+
+
+============================
+⚡ Important Notes
+============================
+- Static, final, and private methods are NOT polymorphic
+    - They are resolved at compile-time (no VMT lookup).
+    - Why? Because they cannot be overridden.
+- Constructors are not part of VMT
+    - They are not inherited.
+- Overridden methods replace base class methods in the child’s VMT.
+    - This mechanism is called "Dynamic Method Dispatch" in Java.
+
+
+
+🎯 Why Use VMT?
+---------------------
+✅ Efficient runtime method lookup (constant time O(1)).
+✅ Supports true polymorphism in Java.
+✅ Keeps method resolution flexible without losing performance.
+
+
+Method resolution ?
+==================
+Method resolution in Java refers to the process by which the Java compiler and the Java Virtual Machine (JVM)
+determine which specific method to invoke when a method call is made.
+This process differs depending on whether method overloading or method overriding is involved.
+
+
+✅ Summary
+-----------
+- Runtime polymorphism in Java is implemented using the Virtual Method Table (VMT).
+- Each class has its own VMT → stores addresses of methods.
+- When an overridden method is called, JVM looks up the actual implementation in the object’s VMT.
+- Ensures dynamic method dispatch at runtime.
+
+
+
+
+
+
+
+
+
+
