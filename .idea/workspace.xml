@@ -4,18 +4,11 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="33d39792-1fba-49b3-abc0-1cfea40606da" name="Changes" comment="Inner classes examples are created (Member Inner class, Static Nested Class, Local Inner Class)">
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/akk/oop_advance/inner_classes/anonymous_inner_classes/AnonymousInnerClassWithAbstractClassEx2.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/akk/oop_advance/inner_classes/anonymous_inner_classes/AnonymousInnerClassWithInterfaceEx1.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/akk/oop_advance/inner_classes/intro_anonymous_classes.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/akk/oop_advance/inner_classes/local_inner_classes/LocalInnerClassRealWorldExample.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/akk/oop_advance/inner_classes/static_nested_classes/StaticNestedClassRealWorldEx1.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/akk/oop_advance/inner_classes/static_nested_classes/StaticNestedClassRealWorldEx2.java" afterDir="false" />
+    <list default="true" id="33d39792-1fba-49b3-abc0-1cfea40606da" name="Changes" comment="Examples of Real world use cases of Inner Classes and anonymous classes created.">
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/akk/oop_advance/inner_classes/static_nested_classes/StaticNestedClassRealWorldCompleteEx1.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/akk/oop_advance/inner_classes/static_nested_classes/StaticNestedClassRealWorldCompleteEx2.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/akk/oop_advance/inner_classes/LocalInnerClass.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/akk/oop_advance/inner_classes/local_inner_classes/LocalInnerClass.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/akk/oop_advance/inner_classes/MemberInnerClassExample.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/akk/oop_advance/inner_classes/member_inner_class/MemberInnerClassExample.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/akk/oop_advance/inner_classes/StaticNestedClass.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/akk/oop_advance/inner_classes/static_nested_classes/StaticNestedClass.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/akk/oop_advance/inner_classes/intro_inner_classes.txt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/akk/oop_advance/inner_classes/intro_inner_classes.txt" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -35,40 +28,71 @@
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
+  <component name="GitHubPullRequestSearchHistory"><![CDATA[{
+  "lastFilter": {
+    "state": "OPEN",
+    "assignee": "iArshKaushal"
+  }
+}]]></component>
+  <component name="GithubPullRequestsUISettings"><![CDATA[{
+  "selectedUrlAndAccountId": {
+    "url": "https://github.com/iArshKaushal/JavaTutorial.git",
+    "accountId": "c799ac48-9840-498d-ac7e-565a017fc635"
+  }
+}]]></component>
+  <component name="KubernetesApiPersistence"><![CDATA[{}]]></component>
+  <component name="KubernetesApiProvider"><![CDATA[{
+  "isMigrated": true
+}]]></component>
   <component name="MarkdownSettingsMigration">
     <option name="stateVersion" value="1" />
   </component>
   <component name="ProblemsViewState">
     <option name="selectedTabId" value="CurrentFile" />
   </component>
+  <component name="ProjectColorInfo"><![CDATA[{
+  "associatedIndex": 3
+}]]></component>
   <component name="ProjectId" id="32ZrHY78iE5oydEcc4toCZyRreM" />
-  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
-    &quot;dart.analysis.tool.window.visible&quot;: &quot;false&quot;,
-    &quot;git-widget-placeholder&quot;: &quot;main&quot;,
-    &quot;last_opened_file_path&quot;: &quot;C:/Users/iarsh/Downloads/LearnSpringFramework-master/0JavaProjects/JavaTutorial&quot;,
-    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
-    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
-    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
-    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
-    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;project.propVCSSupport.DirectoryMappings&quot;,
-    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "Application.StaticNestedClass.executor": "Run",
+    "Application.StaticNestedClassRealWorldCompleteEx2.executor": "Run",
+    "Application.StaticNestedClassRealWorldCompleteEx3.executor": "Run",
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "RunOnceActivity.git.unshallow": "true",
+    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
+    "WebServerToolWindowFactoryState": "false",
+    "dart.analysis.tool.window.visible": "false",
+    "git-widget-placeholder": "main",
+    "last_opened_file_path": "C:/Users/iarsh/Downloads/LearnSpringFramework-master/0JavaProjects/JavaTutorial",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm",
+    "settings.editor.selected.configurable": "project.propVCSSupport.DirectoryMappings",
+    "vue.rearranger.settings.migration": "true"
   }
-}</component>
+}]]></component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
       <recent name="C:\Users\iarsh\Downloads\LearnSpringFramework-master\0JavaProjects\JavaTutorial\src\main\java\org\akk\oop_basic\d_abstraction" />
       <recent name="C:\Users\iarsh\Downloads\LearnSpringFramework-master\0JavaProjects\JavaTutorial\src\main\java\org\akk" />
     </key>
+  </component>
+  <component name="SharedIndexes">
+    <attachedChunks>
+      <set>
+        <option value="bundled-jdk-9823dce3aa75-fbdcb00ec9e3-intellij.indexing.shared.core-IU-251.26927.53" />
+        <option value="bundled-js-predefined-d6986cc7102b-09060db00ec0-JavaScript-IU-251.26927.53" />
+      </set>
+    </attachedChunks>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
@@ -118,7 +142,15 @@
       <option name="project" value="LOCAL" />
       <updated>1758027277785</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="Examples of Real world use cases of Inner Classes and anonymous classes created.">
+      <option name="closed" value="true" />
+      <created>1758195762794</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1758195762794</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -140,6 +172,7 @@
     <MESSAGE value="Polymorphism introduction and compile time and run time polymorphism example files are created" />
     <MESSAGE value="Virtual method table example added, Enhanced Switch example added, Aggregation, composistion and associatin example added" />
     <MESSAGE value="Inner classes examples are created (Member Inner class, Static Nested Class, Local Inner Class)" />
-    <option name="LAST_COMMIT_MESSAGE" value="Inner classes examples are created (Member Inner class, Static Nested Class, Local Inner Class)" />
+    <MESSAGE value="Examples of Real world use cases of Inner Classes and anonymous classes created." />
+    <option name="LAST_COMMIT_MESSAGE" value="Examples of Real world use cases of Inner Classes and anonymous classes created." />
   </component>
 </project>
