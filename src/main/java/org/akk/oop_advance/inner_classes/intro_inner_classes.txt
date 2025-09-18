@@ -36,15 +36,43 @@ An inner class is a class defined inside another class.
 ✅ Useful for method-specific logic.
 
 
+4 Anonymous Inner Class
+---------------------------
+    - A class without a name, defined and instantiated in a single statement.
+    - Usually used to implement interfaces or extend abstract classes inline.
+✅ Anonymous inner class lets us quickly create one-off implementations.
 
 
 
 
 
+⚖️ Differences Between Inner Classes
+===========================================
+Type	                Scope & Use Case
+---------------------------------------------------------------------------------
+Member Inner Class	    Associated with object, full access to outer instance
+Static Nested Class	    Independent of object, only accesses static members
+Local Inner Class	    Inside a method/block, limited scope
+Anonymous Class	        No name, inline implementation of interface/abstract class
 
 
 
 
+🎯 Advantages of Inner & Anonymous Classes
+--------------------------------------------------------
+✅ Helps in grouping logically related classes.
+✅ Can access outer class members, increasing encapsulation.
+✅ Anonymous classes reduce boilerplate code (especially with interfaces).
+✅ Often used in event handling (like Swing, Android, etc.).
+
+
+
+
+⚠️ Limitations
+===========================
+❌ Can make code harder to read if overused.
+❌ Anonymous classes are single-use (no reuse).
+❌ Local inner classes can only access effectively final variables.
 
 
 

@@ -4,12 +4,18 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="33d39792-1fba-49b3-abc0-1cfea40606da" name="Changes" comment="Virtual method table example added, Enhanced Switch example added, Aggregation, composistion and associatin example added">
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/akk/oop_advance/inner_classes/LocalInnerClass.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/akk/oop_advance/inner_classes/MemberInnerClassExample.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/akk/oop_advance/inner_classes/StaticNestedClass.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/akk/oop_advance/inner_classes/intro_inner_classes.txt" afterDir="false" />
+    <list default="true" id="33d39792-1fba-49b3-abc0-1cfea40606da" name="Changes" comment="Inner classes examples are created (Member Inner class, Static Nested Class, Local Inner Class)">
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/akk/oop_advance/inner_classes/anonymous_inner_classes/AnonymousInnerClassWithAbstractClassEx2.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/akk/oop_advance/inner_classes/anonymous_inner_classes/AnonymousInnerClassWithInterfaceEx1.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/akk/oop_advance/inner_classes/intro_anonymous_classes.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/akk/oop_advance/inner_classes/local_inner_classes/LocalInnerClassRealWorldExample.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/akk/oop_advance/inner_classes/static_nested_classes/StaticNestedClassRealWorldEx1.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/akk/oop_advance/inner_classes/static_nested_classes/StaticNestedClassRealWorldEx2.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/akk/oop_advance/inner_classes/LocalInnerClass.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/akk/oop_advance/inner_classes/local_inner_classes/LocalInnerClass.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/akk/oop_advance/inner_classes/MemberInnerClassExample.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/akk/oop_advance/inner_classes/member_inner_class/MemberInnerClassExample.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/akk/oop_advance/inner_classes/StaticNestedClass.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/akk/oop_advance/inner_classes/static_nested_classes/StaticNestedClass.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/akk/oop_advance/inner_classes/intro_inner_classes.txt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/akk/oop_advance/inner_classes/intro_inner_classes.txt" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -75,7 +81,10 @@
       <workItem from="1757638851384" duration="2000" />
       <workItem from="1757651875435" duration="9611000" />
       <workItem from="1757928377369" duration="1196000" />
-      <workItem from="1758012382730" duration="10312000" />
+      <workItem from="1758012382730" duration="11025000" />
+      <workItem from="1758089467086" duration="124000" />
+      <workItem from="1758103000857" duration="4063000" />
+      <workItem from="1758171176904" duration="5239000" />
     </task>
     <task id="LOCAL-00001" summary="Classes, Objects, Encapsulation and Abstraction Modules are created with examples">
       <option name="closed" value="true" />
@@ -101,7 +110,15 @@
       <option name="project" value="LOCAL" />
       <updated>1758022791956</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="Inner classes examples are created (Member Inner class, Static Nested Class, Local Inner Class)">
+      <option name="closed" value="true" />
+      <created>1758027277785</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1758027277785</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -122,6 +139,7 @@
     <MESSAGE value="Classes, Objects, Encapsulation and Abstraction Modules are created with examples" />
     <MESSAGE value="Polymorphism introduction and compile time and run time polymorphism example files are created" />
     <MESSAGE value="Virtual method table example added, Enhanced Switch example added, Aggregation, composistion and associatin example added" />
-    <option name="LAST_COMMIT_MESSAGE" value="Virtual method table example added, Enhanced Switch example added, Aggregation, composistion and associatin example added" />
+    <MESSAGE value="Inner classes examples are created (Member Inner class, Static Nested Class, Local Inner Class)" />
+    <option name="LAST_COMMIT_MESSAGE" value="Inner classes examples are created (Member Inner class, Static Nested Class, Local Inner Class)" />
   </component>
 </project>

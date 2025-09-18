@@ -1,4 +1,4 @@
-package org.akk.oop_advance.inner_classes;
+package org.akk.oop_advance.inner_classes.static_nested_classes;
 
 
 class OuterNested {
@@ -13,6 +13,13 @@ class OuterNested {
     }
 }
 
+
+abstract class aa {}
+
+class bb{
+    aa aa = new aa(){
+    };
+};
 
 
 public class StaticNestedClass {

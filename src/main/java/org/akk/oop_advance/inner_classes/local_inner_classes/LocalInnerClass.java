@@ -1,4 +1,4 @@
-package org.akk.oop_advance.inner_classes;
+package org.akk.oop_advance.inner_classes.local_inner_classes;
 
 /// Local inner class in created inside, Method, constructor or a block
 class OuterLocalInner{
