@@ -4,10 +4,8 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="33d39792-1fba-49b3-abc0-1cfea40606da" name="Changes" comment="Examples of Real world use cases of Inner Classes and anonymous classes created.">
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/akk/oop_advance/inner_classes/static_nested_classes/StaticNestedClassRealWorldCompleteEx1.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/akk/oop_advance/inner_classes/static_nested_classes/StaticNestedClassRealWorldCompleteEx2.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+    <list default="true" id="33d39792-1fba-49b3-abc0-1cfea40606da" name="Changes" comment="Complete examples of Real world use cases of Static Nested classes created (inside static nested classes folder). like StaticNestedClassRealWorldCompleteEx1">
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/akk/design_patterns/builder_dp/BuilderDesignPatternEx1.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -28,31 +26,31 @@
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
-  <component name="GitHubPullRequestSearchHistory"><![CDATA[{
-  "lastFilter": {
-    "state": "OPEN",
-    "assignee": "iArshKaushal"
+  <component name="GitHubPullRequestSearchHistory">{
+  &quot;lastFilter&quot;: {
+    &quot;state&quot;: &quot;OPEN&quot;,
+    &quot;assignee&quot;: &quot;iArshKaushal&quot;
   }
-}]]></component>
-  <component name="GithubPullRequestsUISettings"><![CDATA[{
-  "selectedUrlAndAccountId": {
-    "url": "https://github.com/iArshKaushal/JavaTutorial.git",
-    "accountId": "c799ac48-9840-498d-ac7e-565a017fc635"
+}</component>
+  <component name="GithubPullRequestsUISettings">{
+  &quot;selectedUrlAndAccountId&quot;: {
+    &quot;url&quot;: &quot;https://github.com/iArshKaushal/JavaTutorial.git&quot;,
+    &quot;accountId&quot;: &quot;c799ac48-9840-498d-ac7e-565a017fc635&quot;
   }
-}]]></component>
-  <component name="KubernetesApiPersistence"><![CDATA[{}]]></component>
-  <component name="KubernetesApiProvider"><![CDATA[{
-  "isMigrated": true
-}]]></component>
+}</component>
+  <component name="KubernetesApiPersistence">{}</component>
+  <component name="KubernetesApiProvider">{
+  &quot;isMigrated&quot;: true
+}</component>
   <component name="MarkdownSettingsMigration">
     <option name="stateVersion" value="1" />
   </component>
   <component name="ProblemsViewState">
     <option name="selectedTabId" value="CurrentFile" />
   </component>
-  <component name="ProjectColorInfo"><![CDATA[{
-  "associatedIndex": 3
-}]]></component>
+  <component name="ProjectColorInfo">{
+  &quot;associatedIndex&quot;: 3
+}</component>
   <component name="ProjectId" id="32ZrHY78iE5oydEcc4toCZyRreM" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
@@ -60,6 +58,7 @@
   </component>
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
+    "Application.BuilderDesignPatternEx1.executor": "Run",
     "Application.StaticNestedClass.executor": "Run",
     "Application.StaticNestedClassRealWorldCompleteEx2.executor": "Run",
     "Application.StaticNestedClassRealWorldCompleteEx3.executor": "Run",
@@ -109,6 +108,11 @@
       <workItem from="1758089467086" duration="124000" />
       <workItem from="1758103000857" duration="4063000" />
       <workItem from="1758171176904" duration="5239000" />
+      <workItem from="1758272638543" duration="154000" />
+      <workItem from="1758272984063" duration="623000" />
+      <workItem from="1758273661338" duration="683000" />
+      <workItem from="1758274359181" duration="135000" />
+      <workItem from="1758274625162" duration="2294000" />
     </task>
     <task id="LOCAL-00001" summary="Classes, Objects, Encapsulation and Abstraction Modules are created with examples">
       <option name="closed" value="true" />
@@ -150,7 +154,15 @@
       <option name="project" value="LOCAL" />
       <updated>1758195762794</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="Complete examples of Real world use cases of Static Nested classes created (inside static nested classes folder). like StaticNestedClassRealWorldCompleteEx1">
+      <option name="closed" value="true" />
+      <created>1758200962787</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1758200962787</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -173,6 +185,7 @@
     <MESSAGE value="Virtual method table example added, Enhanced Switch example added, Aggregation, composistion and associatin example added" />
     <MESSAGE value="Inner classes examples are created (Member Inner class, Static Nested Class, Local Inner Class)" />
     <MESSAGE value="Examples of Real world use cases of Inner Classes and anonymous classes created." />
-    <option name="LAST_COMMIT_MESSAGE" value="Examples of Real world use cases of Inner Classes and anonymous classes created." />
+    <MESSAGE value="Complete examples of Real world use cases of Static Nested classes created (inside static nested classes folder). like StaticNestedClassRealWorldCompleteEx1" />
+    <option name="LAST_COMMIT_MESSAGE" value="Complete examples of Real world use cases of Static Nested classes created (inside static nested classes folder). like StaticNestedClassRealWorldCompleteEx1" />
   </component>
 </project>
