@@ -4,8 +4,8 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="33d39792-1fba-49b3-abc0-1cfea40606da" name="Changes" comment="Complete examples of Real world use cases of Static Nested classes created (inside static nested classes folder). like StaticNestedClassRealWorldCompleteEx1">
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/akk/design_patterns/builder_dp/BuilderDesignPatternEx1.java" afterDir="false" />
+    <list default="true" id="33d39792-1fba-49b3-abc0-1cfea40606da" name="Changes" comment="Builder Design Pattern Ex1 created under Design Pattern folder.">
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/akk/oop_advance/anonymous_objects/AnonymousObjectEx1.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -58,6 +58,7 @@
   </component>
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
+    "Application.AnonymousObjectEx1.executor": "Run",
     "Application.BuilderDesignPatternEx1.executor": "Run",
     "Application.StaticNestedClass.executor": "Run",
     "Application.StaticNestedClassRealWorldCompleteEx2.executor": "Run",
@@ -112,7 +113,7 @@
       <workItem from="1758272984063" duration="623000" />
       <workItem from="1758273661338" duration="683000" />
       <workItem from="1758274359181" duration="135000" />
-      <workItem from="1758274625162" duration="2294000" />
+      <workItem from="1758274625162" duration="4442000" />
     </task>
     <task id="LOCAL-00001" summary="Classes, Objects, Encapsulation and Abstraction Modules are created with examples">
       <option name="closed" value="true" />
@@ -162,7 +163,15 @@
       <option name="project" value="LOCAL" />
       <updated>1758200962787</updated>
     </task>
-    <option name="localTasksCounter" value="7" />
+    <task id="LOCAL-00007" summary="Builder Design Pattern Ex1 created under Design Pattern folder.">
+      <option name="closed" value="true" />
+      <created>1758281226596</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1758281226596</updated>
+    </task>
+    <option name="localTasksCounter" value="8" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -186,6 +195,7 @@
     <MESSAGE value="Inner classes examples are created (Member Inner class, Static Nested Class, Local Inner Class)" />
     <MESSAGE value="Examples of Real world use cases of Inner Classes and anonymous classes created." />
     <MESSAGE value="Complete examples of Real world use cases of Static Nested classes created (inside static nested classes folder). like StaticNestedClassRealWorldCompleteEx1" />
-    <option name="LAST_COMMIT_MESSAGE" value="Complete examples of Real world use cases of Static Nested classes created (inside static nested classes folder). like StaticNestedClassRealWorldCompleteEx1" />
+    <MESSAGE value="Builder Design Pattern Ex1 created under Design Pattern folder." />
+    <option name="LAST_COMMIT_MESSAGE" value="Builder Design Pattern Ex1 created under Design Pattern folder." />
   </component>
 </project>

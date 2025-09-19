@@ -1,0 +1,116 @@
+✅ What is an anonymous object?
+---------------------------------
+An anonymous object is simply an object created with the new operator without assigning it to a variable.
+You create it and use it immediately.
+
+new MyClass().doSomething();
+
+Here an instance of MyClass is created but no reference variable is kept — it’s anonymous (unnamed).
+
+
+
+🔎 Simple examples
+=========================
+1) Call a method once (one-time use)
+new Greeting().sayHello();  // use and forget
+
+2) Pass directly to a method
+service.process(new Task("cleanup"));
+
+3) Print a freshly created object
+System.out.println(new Date());
+
+4) Method chaining (only if methods return something usable)
+new Builder().setName("Alice").setAge(30).build();
+
+Note: chaining works only when methods return this or another object — you cannot call a second method on an anonymous object if the first returns void.
+
+
+
+=====================================================================
+⚠️ Anonymous object vs Anonymous inner class (common confusion)
+=====================================================================
+They are different:
+
+    - Anonymous object = object with no reference, created via new Class(...) and used immediately.
+        new ArrayList<>().add("one");   // anonymous object (but here add returns boolean, so usable)
+
+    - Anonymous inner class = a class with no name that you define inline while instantiating (common with listeners or single-use overrides).
+
+        Runnable r = new Runnable() {
+            public void run() { System.out.println("run"); }
+        }; // anonymous inner class
+
+People sometimes call both “anonymous objects” loosely — be careful to know which meaning is intended.
+
+
+
+🧠 Lifetime & Garbage Collection
+====================================
+    - If no reference is kept, the anonymous object becomes eligible for GC after the expression completes (assuming it hasn't been stored somewhere else).
+    - If the object escapes (e.g., you add it to a List inside the constructor or method), it remains referenced and is not GC-eligible.
+
+        // eligible for GC after println completes (if no other ref)
+        System.out.println(new Person("A"));
+
+        // NOT eligible if added to a global list inside constructor or method
+
+
+
+✅ When to use anonymous objects (use-cases)
+===============================================
+    - One-shot usage: call a method immediately, pass as parameter.
+    - Temporary data for a single invocation (e.g., temp DTO for a service call).
+    - Builder-style chains for concise code (new X().withA().withB().build()).
+    - Test code / quick scripts where readability is obvious.
+
+❗ Downsides / pitfalls
+================================
+    - Not reusable — you can’t call multiple independent methods unless chained appropriately.
+    - Harder to debug — no variable name in debugger (though you can still inspect it on the stack).
+    - Readability — overuse hurts clarity.
+
+    - Performance — creating many short-lived objects in tight loops can cost (GC pressure). Prefer reuse in hot paths.
+    --------------------------------------------------------------------------------------------------------------------
+        -> Short-lived objects → Objects created just for temporary use and then discarded quickly (like anonymous objects).
+        -> Tight loops → A piece of code that runs many times (e.g., for loop with thousands/millions of iterations).
+        -> GC pressure → The Garbage Collector (GC) has to work harder to clean up these discarded objects.
+            - If you keep creating new objects rapidly, the JVM constantly allocates and frees memory, which slows performance.
+
+        👉 The advice is: if you’re in a hot path (code that executes very frequently and impacts performance),
+            avoid creating new anonymous objects repeatedly. Instead, reuse objects when possible.
+
+            🔹 Example: Anonymous objects in a loop (bad practice)
+            ---------------------------------------------------------
+                    for (int i = 0; i < 1_000_000; i++) {
+                        process(new String("data")); // creates 1 million String objects
+                    }
+                - Every iteration creates a new String object.
+                - None of them are reused → they become garbage almost immediately.
+                - The JVM allocates memory 1,000,000 times, and GC has to clean them → GC pressure.
+
+            🔹 Better: Reuse object (good practice)
+            ----------------------------------------
+                String data = new String("data"); // create once
+                for (int i = 0; i < 1_000_000; i++) {
+                    process(data); // reuse the same object
+                }
+                - Only 1 object created, reused in the loop.
+                - GC has much less work to do.
+                - Performance is faster & memory efficient.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
