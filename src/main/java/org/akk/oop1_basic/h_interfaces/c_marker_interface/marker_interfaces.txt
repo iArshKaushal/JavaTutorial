@@ -1,0 +1,9 @@
+
+What is Marker Interface ?
+------------------------
+A marker interface (or tagging interface) is a Java interface that contains no methods or fields,
+serving as a "tag" to provide metadata about a class or object at runtime.
+
+By implementing a marker interface, a class signals that it supports a specific behavior or property,
+which the Java Virtual Machine (JVM), libraries, or frameworks can then recognize and act upon,
+such as serialization with Serializable or cloning with Cloneable.
