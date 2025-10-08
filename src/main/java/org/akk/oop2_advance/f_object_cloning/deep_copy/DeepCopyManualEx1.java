@@ -49,6 +49,7 @@ class Person implements Cloneable {
 
 
 public class DeepCopyManualEx1 {
+
     public static void main(String[] args) {
         Address addr = new Address("123 Main St");
         Person p1 = new Person("Alice", addr);
