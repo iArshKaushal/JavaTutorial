@@ -1,0 +1,74 @@
+
+1) What is cloning in Java?
+---------------------------
+Cloning means creating a new object whose state is a copy of an existing object's state.
+Java provides a mechanism via:
+    - the Cloneable marker interface, and
+    - Object.clone() method.
+
+But note: Java’s cloning API is widely regarded as a flawed design and is often avoided in production code. Still, understanding it is important.
+
+
+2) How Object.clone() works (internals)
+--------------------------------------
+- Object.clone() is a protected native method that:
+    - checks if this is an instance of Cloneable. If not, it throws CloneNotSupportedException.
+    - performs a shallow, field-by-field copy of the object (it does not call constructors).
+    - returns a new object whose runtime type is the same as the original.
+- Arrays implement Cloneable and array.clone() returns a shallow copy (a new array object with references copied).
+
+Important consequences:
+~~~~~~~~~~~~~~~~~~~~~~~~~
+- Constructors are not executed for the cloned object.
+- Primitive fields are copied; reference fields copy the references (not the referred objects).
+
+
+
+3) Shallow copy vs Deep copy
+----------------------------
+- Shallow copy: Copies immediate fields — for object references, copies the reference only. Both original and clone refer to same nested objects.
+- Deep copy: Recursively copies nested mutable objects so the clone is independent of the original.
+
+
+
+6) Arrays and Collections cloning behavior
+---------------------------------------------
+    - int[] a2 = a1.clone(); → creates a new array; elements copied. For primitives that’s full copy; for object arrays it's shallow (element references same).
+    - ArrayList.clone() returns a shallow copy of the list: new ArrayList with same element references.
+        Many collection classes implement Cloneable but their clone() is shallow.
+
+If you need deep copy of a collection, you must clone/construct each element (e.g., map each element to its clone).
+
+
+
+
+7) Cloning and inheritance — correct pattern
+-----------------------------------------------
+If you have a class hierarchy, prefer making base class provide a protected clone() implementation
+and subclasses override and make public:
+
+Important:
+    - super.clone() returns an object of the correct runtime type (no need for reflection).
+    - If any superclass does not implement Cloneable, super.clone() will throw CloneNotSupportedException.
+        So if you control the class hierarchy, implement Cloneable consistently.
+
+
+
+11) When to use clone() (practical guidance)
+-----------------------------------------------
+Use clone() only if:
+    - You control the full class hierarchy and can properly document/implement clone across classes.
+    - You need a fast, low-level copy and can manage shallow-vs-deep semantics precisely.
+    - Prefer alternatives (copy constructor/factory) in most cases.
+
+
+14) Best-practices checklist
+-------------------------------
+# Prefer copy constructor / static factory over clone() unless necessary.
+# If using clone():
+    - Implement Cloneable.
+    - Override clone() and call super.clone().
+    - Make clone() public (or protected if intended only for subclasses).
+    - Deep-copy mutable fields manually.
+    - Document the clone semantics (shallow vs deep).
+    - Avoid final mutable fields that require cloning — they’re hard to reassign.

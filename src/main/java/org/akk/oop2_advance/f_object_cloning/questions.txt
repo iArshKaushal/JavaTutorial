@@ -1,0 +1,16 @@
+Common interview Q/A (quick)
+=================================
+
+1. Does super.clone() call the constructor?
+    No — constructors are not called when using Object.clone().
+
+2. Is clone deep by default?
+    No — default is shallow.
+
+3. Do arrays clone deeply?
+    array.clone() creates a new array object and copies references — so elements are not deep-copied (unless primitives).
+
+4. Can clone() be public?
+    Yes; Object.clone() is protected. If you provide cloning to callers, override and make it public.
+
+
