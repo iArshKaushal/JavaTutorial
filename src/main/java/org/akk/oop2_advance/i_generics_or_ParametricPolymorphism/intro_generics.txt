@@ -1,0 +1,132 @@
+🧠 1. What Are Generics?
+-------------------------------
+Generics allow you to create classes, interfaces, and methods that can operate on different data types while maintaining compile-time type safety.
+🔹 In simple terms:
+    Generics mean you can write code once — and use it for any type — without losing type safety.
+
+
+✅ Problem:
+    - Any type could be added (no type checking).
+    - You could get ClassCastException at runtime.
+
+
+✅ Benefits:
+    - Type safety (compiler checks type correctness)
+    - No need for explicit casting
+    - Code reusability
+
+
+
+🧩 2. The Term: Parametric Polymorphism
+----------------------------------------------
+    - Polymorphism → “many forms” (same code, different behavior)
+    - Parametric → using type parameters (like <T>, <E>, <K,V>)
+
+So, Parametric Polymorphism means:
+    A method or class can handle values uniformly without depending on their specific types.
+
+
+
+
+🔹 6. Bounded Type Parameters
+-----------------------------------
+Sometimes you want to restrict the kinds of types that can be used.
+
+
+🧩 1. Why We Need Bounded Type Parameters
+------------------------------------------
+The type parameter T can be any type — String, Integer, Car, Employee, etc.
+But sometimes you want to restrict what types are allowed.
+
+For example:
+    You want only numeric types (Integer, Double, etc.).
+    Or, you want to allow Number and its subclasses but not unrelated types like String.
+    That’s where bounds come in,
+        - Upper Bound
+        - Lower Bound
+
+
+
+🔹 2. Upper Bound (extends)
+============================
+✅ Definition:
+An upper-bounded type parameter specifies that the type argument must be a specific class or its subclass (or must implement a specific interface).
+
+📘 Syntax:  <T extends ClassName>
+
+Here:
+T can be Integer, Float, Double, etc. (because they all extend Number) But not String or Boolean.
+
+
+
+
+🔹 Real-world Analogy:
+----------------------
+If you say: “Only people who are Employees or subtypes of Employee can enter.”
+
+That’s like: <T extends Employee>
+Only Employee, Manager extends Employee, or Developer extends Employee are allowed.
+
+
+
+
+🧩 3. Lower Bound (super)
+---------------------------
+✅ Definition:
+A lower-bounded type parameter allows the type argument to be a specific class or any of its superclasses.
+Used only with wildcards, not with declared type parameters.
+
+📘 Syntax: <? super ClassName>
+
+    Object
+       ↑
+    Number
+       ↑
+    Integer
+
+
+
+🎯 5. PECS Rule (Producer Extends, Consumer Super)
+========================================================
+This is a famous mnemonic from Joshua Bloch’s “Effective Java”:
+
+Role	            Use	                Meaning
+-----------------------------------------------------------
+Producer of data	<? extends T>	    You read from it
+Consumer of data	<? super T>	        You write to it
+
+Example:
+-------
+    void copy(List<? extends Number> src, List<? super Number> dest) {
+        for (Number n : src)
+            dest.add(n);
+    }
+
+    * Source (src) produces elements → extends
+    * Destination (dest) consumes elements → super
+
+
+
+
+🔧 7. When to Use Which?
+===============================
+Situation	                                            Bound	                            Example
+-------------------------------------------------+--------------------------------------+--------------------------
+1. You want to read data of a known supertype	            extends	                            List<? extends Number>
+2. You want to write data to a generic collection	        super	                            List<? super Integer>
+3. You want to restrict generic class to certain types	    extends (in class declaration)	    class Box<T extends Shape>
+
+
+
+🔹 10. Limitations of Generics
+===========================================
+Limitation	                                                Reason
+-------------------------------------------------------------------------------------------------
+No primitive types (int, double)	                        Generics work with Objects only
+No new T()	                                                Type is unknown at runtime
+No T[] array creation	                                    Type erasure
+No instanceof with parameterized type	                    Type info erased
+Cannot overload methods that differ only by type parameter	Type erasure
+
+
+
