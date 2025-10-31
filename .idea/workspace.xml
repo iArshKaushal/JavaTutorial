@@ -4,15 +4,28 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="33d39792-1fba-49b3-abc0-1cfea40606da" name="Changes" comment="Marker Interface example created under basic oops folder.">
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/akk/oop2_advance/f_object_cloning/deep_copy/DeepArrayCloning.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/akk/oop2_advance/f_object_cloning/deep_copy/DeepCopyManualEx1.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/akk/oop2_advance/f_object_cloning/intro_object_cloning.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/akk/oop2_advance/f_object_cloning/shallow_copy/BasicShallowCopyEx1.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/akk/oop2_advance/f_object_cloning/shallow_copy/ShallowAndDeepCopyEx1.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/akk/oop2_advance/f_object_cloning/shallow_copy/ShallowArrayCloningEx1.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/akk/oop2_advance/f_object_cloning/shallow_copy/ShallowCopyProblemWithObjectArrays.java" afterDir="false" />
+    <list default="true" id="33d39792-1fba-49b3-abc0-1cfea40606da" name="Changes" comment="examples for Bounded type parameter (Upper Bound and Lower Bound) and Generic Interface created">
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/akk/oop1_basic/a_classes/intro_classes.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/akk/oop2_advance/k_enum/Ex10EnumSetCollection.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/akk/oop2_advance/k_enum/Ex11EnumSetMethods.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/akk/oop2_advance/k_enum/Ex1Enum.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/akk/oop2_advance/k_enum/Ex2EnumWithFieldsAndConstructor.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/akk/oop2_advance/k_enum/Ex3EnumWithMethod.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/akk/oop2_advance/k_enum/Ex4EnumMethods.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/akk/oop2_advance/k_enum/Ex5EnumWithSwitch.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/akk/oop2_advance/k_enum/Ex6EnumWithCustomBehaviourAndFields.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/akk/oop2_advance/k_enum/Ex7EnumWithInterfaces.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/akk/oop2_advance/k_enum/Ex8EnumWithInterfaces.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/akk/oop2_advance/k_enum/Ex9EnumInRealProjects.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/akk/oop2_advance/k_enum/intro_enums" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/akk/z1_other_concepts/other/ReflectionEx1.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/akk/zz_new_features/java14/records/Ex1Record.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/akk/zz_new_features/java14/records/Ex2RecordUseCase.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/akk/zz_new_features/java14/records/intro_records_java14" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/akk/zz_new_features/java17/sealed_classes/Ex1SealedClasses.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/akk/zz_new_features/java17/sealed_classes/Ex2SealedInterfaces.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/akk/control_flow/switch_statement/EnhancedSwitch.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/akk/control_flow/switch_statement/EnhancedSwitch.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -67,9 +80,43 @@
     "Application.AnonymousObjectEx1.executor": "Run",
     "Application.ArrayCloningEx1.executor": "Run",
     "Application.BuilderDesignPatternEx1.executor": "Run",
+    "Application.CovariantReturnTypeEx1.executor": "Run",
     "Application.DeepArrayCloning.executor": "Run",
     "Application.DeepCopyManualEx1.executor": "Run",
+    "Application.DeepCopyWithCopyConstructor.executor": "Run",
+    "Application.Ex10EnumSetCollection.executor": "Run",
+    "Application.Ex11EnumSetMethods.executor": "Run",
+    "Application.Ex1Enum.executor": "Run",
+    "Application.Ex1Generics.executor": "Run",
+    "Application.Ex1HashCodeMethod.executor": "Run",
+    "Application.Ex1Record.executor": "Run",
+    "Application.Ex1SealedClasses.executor": "Run",
+    "Application.Ex2EnumWithFieldsAndConstructor.executor": "Run",
+    "Application.Ex2GenericSyntax.executor": "Run",
+    "Application.Ex2HashCodeNotUsed.executor": "Run",
+    "Application.Ex2RecordUseCase.executor": "Run",
+    "Application.Ex2WithCovariantType.executor": "Run",
+    "Application.Ex3EnumWithMethod.executor": "Run",
+    "Application.Ex3GenericMethod.executor": "Run",
+    "Application.Ex3MethodChaining.executor": "Run",
+    "Application.Ex3ModernWayForHashCode.executor": "Run",
+    "Application.Ex4CovariantReturnTypeWithInterface.executor": "Run",
+    "Application.Ex4EnumMethods.executor": "Run",
+    "Application.Ex4MultipleTypeParameters.executor": "Run",
+    "Application.Ex4ToStringMethod.executor": "Run",
+    "Application.Ex5BoundedTypeParameterUpperBound.executor": "Run",
+    "Application.Ex5EnumWithSwitch.executor": "Run",
+    "Application.Ex6BoundedTypeParameterLowerBound2.executor": "Run",
+    "Application.Ex6EnumWithCustomBehaviourAndFields.executor": "Run",
+    "Application.Ex7EnumWithInterfaces.executor": "Run",
+    "Application.Ex7UpperAndLowerBoundParameters.executor": "Run",
+    "Application.Ex8EnumWithInterfaces.executor": "Run",
+    "Application.Ex8GenericInterfaces.executor": "Run",
+    "Application.HashCodeMethodEx1.executor": "Run",
+    "Application.HashCodeNotUsedEx.executor": "Run",
     "Application.MarkerInterfaceEx1.executor": "Run",
+    "Application.ReflectionEx1.executor": "Run",
+    "Application.RobustCloneImplementationEx1.executor": "Run",
     "Application.ShallowAndDeepCopyEx1.executor": "Run",
     "Application.ShallowCopyProblemWithObjectArrays.executor": "Run",
     "Application.StaticNestedClass.executor": "Run",
@@ -82,18 +129,19 @@
     "WebServerToolWindowFactoryState": "false",
     "dart.analysis.tool.window.visible": "false",
     "git-widget-placeholder": "main",
-    "last_opened_file_path": "C:/Users/iarsh/Downloads/LearnSpringFramework-master/0JavaProjects/JavaTutorial",
+    "last_opened_file_path": "C:/Users/iarsh/Downloads/LearnSpringFramework-master/0JavaProjects/JavaTutorial/src/main/java/org/akk/oop2_advance/k_enum",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
     "node.js.selected.package.tslint": "(autodetect)",
     "nodejs_package_manager_path": "npm",
-    "settings.editor.selected.configurable": "project.propVCSSupport.DirectoryMappings",
+    "settings.editor.selected.configurable": "Console",
     "vue.rearranger.settings.migration": "true"
   }
 }]]></component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\iarsh\Downloads\LearnSpringFramework-master\0JavaProjects\JavaTutorial\src\main\java\org\akk\oop2_advance\k_enum" />
       <recent name="C:\Users\iarsh\Downloads\LearnSpringFramework-master\0JavaProjects\JavaTutorial\src\main\java\org\akk\oop_basic\d_abstraction" />
       <recent name="C:\Users\iarsh\Downloads\LearnSpringFramework-master\0JavaProjects\JavaTutorial\src\main\java\org\akk" />
     </key>
@@ -130,7 +178,23 @@
       <workItem from="1758274359181" duration="135000" />
       <workItem from="1758274625162" duration="8033000" />
       <workItem from="1758525753529" duration="10087000" />
-      <workItem from="1758602561797" duration="11768000" />
+      <workItem from="1758602561797" duration="13109000" />
+      <workItem from="1758711766914" duration="2812000" />
+      <workItem from="1758792881866" duration="4224000" />
+      <workItem from="1758863828329" duration="611000" />
+      <workItem from="1759212838648" duration="3302000" />
+      <workItem from="1759476313413" duration="1234000" />
+      <workItem from="1759903416215" duration="8024000" />
+      <workItem from="1759987824073" duration="2150000" />
+      <workItem from="1759999808986" duration="11000" />
+      <workItem from="1760071618672" duration="5349000" />
+      <workItem from="1760335236593" duration="3126000" />
+      <workItem from="1760520666247" duration="6501000" />
+      <workItem from="1760598080806" duration="1000" />
+      <workItem from="1760606514564" duration="4519000" />
+      <workItem from="1760678741739" duration="14120000" />
+      <workItem from="1761798327287" duration="6465000" />
+      <workItem from="1761904474137" duration="5231000" />
     </task>
     <task id="LOCAL-00001" summary="Classes, Objects, Encapsulation and Abstraction Modules are created with examples">
       <option name="closed" value="true" />
@@ -220,7 +284,111 @@
       <option name="project" value="LOCAL" />
       <updated>1758602877820</updated>
     </task>
-    <option name="localTasksCounter" value="12" />
+    <task id="LOCAL-00012" summary="Basic Shallow copy and deep copy examples along with array deep and shallow copy example">
+      <option name="closed" value="true" />
+      <created>1758633357559</created>
+      <option name="number" value="00012" />
+      <option name="presentableId" value="LOCAL-00012" />
+      <option name="project" value="LOCAL" />
+      <updated>1758633357559</updated>
+    </task>
+    <task id="LOCAL-00013" summary="Object Cloning using copy constructor">
+      <option name="closed" value="true" />
+      <created>1759476398420</created>
+      <option name="number" value="00013" />
+      <option name="presentableId" value="LOCAL-00013" />
+      <option name="project" value="LOCAL" />
+      <updated>1759476398420</updated>
+    </task>
+    <task id="LOCAL-00014" summary="Object Cloning and inheritance">
+      <option name="closed" value="true" />
+      <created>1759476441392</created>
+      <option name="number" value="00014" />
+      <option name="presentableId" value="LOCAL-00014" />
+      <option name="project" value="LOCAL" />
+      <updated>1759476441392</updated>
+    </task>
+    <task id="LOCAL-00015" summary="Static Factory Method">
+      <option name="closed" value="true" />
+      <created>1759476508364</created>
+      <option name="number" value="00015" />
+      <option name="presentableId" value="LOCAL-00015" />
+      <option name="project" value="LOCAL" />
+      <updated>1759476508364</updated>
+    </task>
+    <task id="LOCAL-00016" summary="Deep Copy manual Example">
+      <option name="closed" value="true" />
+      <created>1759908614216</created>
+      <option name="number" value="00016" />
+      <option name="presentableId" value="LOCAL-00016" />
+      <option name="project" value="LOCAL" />
+      <updated>1759908614216</updated>
+    </task>
+    <task id="LOCAL-00017" summary="Robust Clone implementation Example">
+      <option name="closed" value="true" />
+      <created>1759908655904</created>
+      <option name="number" value="00017" />
+      <option name="presentableId" value="LOCAL-00017" />
+      <option name="project" value="LOCAL" />
+      <updated>1759908655904</updated>
+    </task>
+    <task id="LOCAL-00018" summary="Cloning intro and interview questions are updated">
+      <option name="closed" value="true" />
+      <created>1759908695327</created>
+      <option name="number" value="00018" />
+      <option name="presentableId" value="LOCAL-00018" />
+      <option name="project" value="LOCAL" />
+      <updated>1759908695327</updated>
+    </task>
+    <task id="LOCAL-00019" summary="Hashcode method examples created">
+      <option name="closed" value="true" />
+      <created>1760007023449</created>
+      <option name="number" value="00019" />
+      <option name="presentableId" value="LOCAL-00019" />
+      <option name="project" value="LOCAL" />
+      <updated>1760007023449</updated>
+    </task>
+    <task id="LOCAL-00020" summary="toString method example created">
+      <option name="closed" value="true" />
+      <created>1760007061885</created>
+      <option name="number" value="00020" />
+      <option name="presentableId" value="LOCAL-00020" />
+      <option name="project" value="LOCAL" />
+      <updated>1760007061885</updated>
+    </task>
+    <task id="LOCAL-00021" summary="Covariant return type examples created">
+      <option name="closed" value="true" />
+      <created>1760007091643</created>
+      <option name="number" value="00021" />
+      <option name="presentableId" value="LOCAL-00021" />
+      <option name="project" value="LOCAL" />
+      <updated>1760007091643</updated>
+    </task>
+    <task id="LOCAL-00022" summary="Basic Generic example of classes and methods are uploaded">
+      <option name="closed" value="true" />
+      <created>1760013845917</created>
+      <option name="number" value="00022" />
+      <option name="presentableId" value="LOCAL-00022" />
+      <option name="project" value="LOCAL" />
+      <updated>1760013845917</updated>
+    </task>
+    <task id="LOCAL-00023" summary="Examples for Multiple type parameters created">
+      <option name="closed" value="true" />
+      <created>1760013909131</created>
+      <option name="number" value="00023" />
+      <option name="presentableId" value="LOCAL-00023" />
+      <option name="project" value="LOCAL" />
+      <updated>1760013909131</updated>
+    </task>
+    <task id="LOCAL-00024" summary="examples for Bounded type parameter (Upper Bound and Lower Bound) and Generic Interface created">
+      <option name="closed" value="true" />
+      <created>1760679394697</created>
+      <option name="number" value="00024" />
+      <option name="presentableId" value="LOCAL-00024" />
+      <option name="project" value="LOCAL" />
+      <updated>1760679394697</updated>
+    </task>
+    <option name="localTasksCounter" value="25" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -248,6 +416,19 @@
     <MESSAGE value="Anonymous object examples are created" />
     <MESSAGE value="package structure changed and a new package for Covariant Return Type example created" />
     <MESSAGE value="Marker Interface example created under basic oops folder." />
-    <option name="LAST_COMMIT_MESSAGE" value="Marker Interface example created under basic oops folder." />
+    <MESSAGE value="Basic Shallow copy and deep copy examples along with array deep and shallow copy example" />
+    <MESSAGE value="Object Cloning using copy constructor" />
+    <MESSAGE value="Object Cloning and inheritance" />
+    <MESSAGE value="Static Factory Method" />
+    <MESSAGE value="Deep Copy manual Example" />
+    <MESSAGE value="Robust Clone implementation Example" />
+    <MESSAGE value="Cloning intro and interview questions are updated" />
+    <MESSAGE value="Hashcode method examples created" />
+    <MESSAGE value="toString method example created" />
+    <MESSAGE value="Covariant return type examples created" />
+    <MESSAGE value="Basic Generic example of classes and methods are uploaded" />
+    <MESSAGE value="Examples for Multiple type parameters created" />
+    <MESSAGE value="examples for Bounded type parameter (Upper Bound and Lower Bound) and Generic Interface created" />
+    <option name="LAST_COMMIT_MESSAGE" value="examples for Bounded type parameter (Upper Bound and Lower Bound) and Generic Interface created" />
   </component>
 </project>

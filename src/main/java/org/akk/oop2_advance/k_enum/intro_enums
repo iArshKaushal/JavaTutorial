@@ -1,0 +1,112 @@
+🧩 What Is an Enum in Java?
+------------------------------------
+An enum (short for enumeration) is a special class type introduced in Java 5 that represents a fixed set of named constants.
+    public enum Direction {
+        NORTH, SOUTH, EAST, WEST
+    }
+
+
+🧠 Why Use Enums?
+-------------------
+Without enums, you might do this:
+    public static final int NORTH = 0;
+    public static final int SOUTH = 1;
+    public static final int EAST = 2;
+    public static final int WEST = 3;
+
+
+❌ Problems:
+--------------
+    No type safety
+    Easy to pass invalid values
+    No built-in meaning, just numbers
+
+✅ With enums:
+Direction dir = Direction.NORTH;
+
+You can’t assign invalid values like 5 or "North" — type safety ensured.
+
+
+🧩 Enum Methods (from java.lang.Enum)
+==============================================
+Method	                    Description
+----------------------------------------------------------------
+name()	                    Returns the name of the enum constant
+ordinal()	                Returns position (starting from 0)
+values()	                Returns array of all constants
+valueOf(String name)	    Returns enum constant with given name
+compareTo(Enum other)	    Compare based on declaration order
+toString()	                Returns the name (can be overridden)
+
+
+
+
+***************************************************************
+***************************************************************
+🧠 1. Enum Constants Are Objects
+---------------------------------
+Every constant in an enum — NEW, IN_PROGRESS, COMPLETED — is a separate object (instance) of the Status enum.
+So this declaration:
+    NEW(0), IN_PROGRESS(1), COMPLETED(2);
+
+is similar to saying:
+    public static final Status NEW = new Status(0);
+    public static final Status IN_PROGRESS = new Status(1);
+    public static final Status COMPLETED = new Status(2);
+
+Except that with enums, you can’t directly use new — the JVM automatically creates these instances when the enum is loaded.
+
+
+
+⚙️ 2. Enum Constructors Are Always Private
+---------------------------------------------
+The constructor here:
+    private Status(int code) {
+        this.code = code;
+    }
+
+assigns a value (0, 1, or 2) to each enum constant.
+When you write: -------> NEW(0)
+
+it calls this constructor with argument 0 —
+so internally it runs: ------> this.code = 0;
+
+Similarly:
+    IN_PROGRESS(1) → assigns code = 1
+    COMPLETED(2) → assigns code = 2
+
+
+
+🧭 Enum vs Class vs Interface
+----------------------------------------------------------------------------
+| Feature                  | Enum             | Class         | Interface   |
+| ------------------------ | ---------------- | ------------- | ----------- |
+| Can extend another class | ❌ No            | ✅ Yes        | ❌ No      |
+| Can implement interfaces | ✅ Yes           | ✅ Yes        | ✅ N/A     |
+| Immutable                | ✅ Typically     | ❌ Optional   | ❌ N/A     |
+| Can have constructors    | ✅ Yes (private) | ✅ Yes        | ❌ No      |
+| Fixed set of instances   | ✅ Yes           | ❌ No         | ❌ No      |
+----------------------------------------------------------------------------
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
