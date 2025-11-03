@@ -4,28 +4,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="33d39792-1fba-49b3-abc0-1cfea40606da" name="Changes" comment="examples for Bounded type parameter (Upper Bound and Lower Bound) and Generic Interface created">
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/akk/oop1_basic/a_classes/intro_classes.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/akk/oop2_advance/k_enum/Ex10EnumSetCollection.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/akk/oop2_advance/k_enum/Ex11EnumSetMethods.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/akk/oop2_advance/k_enum/Ex1Enum.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/akk/oop2_advance/k_enum/Ex2EnumWithFieldsAndConstructor.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/akk/oop2_advance/k_enum/Ex3EnumWithMethod.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/akk/oop2_advance/k_enum/Ex4EnumMethods.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/akk/oop2_advance/k_enum/Ex5EnumWithSwitch.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/akk/oop2_advance/k_enum/Ex6EnumWithCustomBehaviourAndFields.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/akk/oop2_advance/k_enum/Ex7EnumWithInterfaces.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/akk/oop2_advance/k_enum/Ex8EnumWithInterfaces.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/akk/oop2_advance/k_enum/Ex9EnumInRealProjects.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/akk/oop2_advance/k_enum/intro_enums" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/akk/z1_other_concepts/other/ReflectionEx1.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/akk/zz_new_features/java14/records/Ex1Record.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/akk/zz_new_features/java14/records/Ex2RecordUseCase.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/akk/zz_new_features/java14/records/intro_records_java14" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/akk/zz_new_features/java17/sealed_classes/Ex1SealedClasses.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/akk/zz_new_features/java17/sealed_classes/Ex2SealedInterfaces.java" afterDir="false" />
+    <list default="true" id="33d39792-1fba-49b3-abc0-1cfea40606da" name="Changes" comment="Predicate(Functional Interface) examples are created">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/org/akk/control_flow/switch_statement/EnhancedSwitch.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/akk/control_flow/switch_statement/EnhancedSwitch.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/akk/design_patterns/builder_dp/BuilderDesignPatternEx1.java" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -75,70 +57,72 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "Application.AnonymousObjectEx1.executor": "Run",
-    "Application.ArrayCloningEx1.executor": "Run",
-    "Application.BuilderDesignPatternEx1.executor": "Run",
-    "Application.CovariantReturnTypeEx1.executor": "Run",
-    "Application.DeepArrayCloning.executor": "Run",
-    "Application.DeepCopyManualEx1.executor": "Run",
-    "Application.DeepCopyWithCopyConstructor.executor": "Run",
-    "Application.Ex10EnumSetCollection.executor": "Run",
-    "Application.Ex11EnumSetMethods.executor": "Run",
-    "Application.Ex1Enum.executor": "Run",
-    "Application.Ex1Generics.executor": "Run",
-    "Application.Ex1HashCodeMethod.executor": "Run",
-    "Application.Ex1Record.executor": "Run",
-    "Application.Ex1SealedClasses.executor": "Run",
-    "Application.Ex2EnumWithFieldsAndConstructor.executor": "Run",
-    "Application.Ex2GenericSyntax.executor": "Run",
-    "Application.Ex2HashCodeNotUsed.executor": "Run",
-    "Application.Ex2RecordUseCase.executor": "Run",
-    "Application.Ex2WithCovariantType.executor": "Run",
-    "Application.Ex3EnumWithMethod.executor": "Run",
-    "Application.Ex3GenericMethod.executor": "Run",
-    "Application.Ex3MethodChaining.executor": "Run",
-    "Application.Ex3ModernWayForHashCode.executor": "Run",
-    "Application.Ex4CovariantReturnTypeWithInterface.executor": "Run",
-    "Application.Ex4EnumMethods.executor": "Run",
-    "Application.Ex4MultipleTypeParameters.executor": "Run",
-    "Application.Ex4ToStringMethod.executor": "Run",
-    "Application.Ex5BoundedTypeParameterUpperBound.executor": "Run",
-    "Application.Ex5EnumWithSwitch.executor": "Run",
-    "Application.Ex6BoundedTypeParameterLowerBound2.executor": "Run",
-    "Application.Ex6EnumWithCustomBehaviourAndFields.executor": "Run",
-    "Application.Ex7EnumWithInterfaces.executor": "Run",
-    "Application.Ex7UpperAndLowerBoundParameters.executor": "Run",
-    "Application.Ex8EnumWithInterfaces.executor": "Run",
-    "Application.Ex8GenericInterfaces.executor": "Run",
-    "Application.HashCodeMethodEx1.executor": "Run",
-    "Application.HashCodeNotUsedEx.executor": "Run",
-    "Application.MarkerInterfaceEx1.executor": "Run",
-    "Application.ReflectionEx1.executor": "Run",
-    "Application.RobustCloneImplementationEx1.executor": "Run",
-    "Application.ShallowAndDeepCopyEx1.executor": "Run",
-    "Application.ShallowCopyProblemWithObjectArrays.executor": "Run",
-    "Application.StaticNestedClass.executor": "Run",
-    "Application.StaticNestedClassRealWorldCompleteEx2.executor": "Run",
-    "Application.StaticNestedClassRealWorldCompleteEx3.executor": "Run",
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "RunOnceActivity.git.unshallow": "true",
-    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
-    "WebServerToolWindowFactoryState": "false",
-    "dart.analysis.tool.window.visible": "false",
-    "git-widget-placeholder": "main",
-    "last_opened_file_path": "C:/Users/iarsh/Downloads/LearnSpringFramework-master/0JavaProjects/JavaTutorial/src/main/java/org/akk/oop2_advance/k_enum",
-    "node.js.detected.package.eslint": "true",
-    "node.js.detected.package.tslint": "true",
-    "node.js.selected.package.eslint": "(autodetect)",
-    "node.js.selected.package.tslint": "(autodetect)",
-    "nodejs_package_manager_path": "npm",
-    "settings.editor.selected.configurable": "Console",
-    "vue.rearranger.settings.migration": "true"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;Application.AnonymousObjectEx1.executor&quot;: &quot;Run&quot;,
+    &quot;Application.ArrayCloningEx1.executor&quot;: &quot;Run&quot;,
+    &quot;Application.BuilderDesignPatternEx1.executor&quot;: &quot;Run&quot;,
+    &quot;Application.CovariantReturnTypeEx1.executor&quot;: &quot;Run&quot;,
+    &quot;Application.DeepArrayCloning.executor&quot;: &quot;Run&quot;,
+    &quot;Application.DeepCopyManualEx1.executor&quot;: &quot;Run&quot;,
+    &quot;Application.DeepCopyWithCopyConstructor.executor&quot;: &quot;Run&quot;,
+    &quot;Application.Ex10EnumSetCollection.executor&quot;: &quot;Run&quot;,
+    &quot;Application.Ex11EnumSetMethods.executor&quot;: &quot;Run&quot;,
+    &quot;Application.Ex1Enum.executor&quot;: &quot;Run&quot;,
+    &quot;Application.Ex1Generics.executor&quot;: &quot;Run&quot;,
+    &quot;Application.Ex1HashCodeMethod.executor&quot;: &quot;Run&quot;,
+    &quot;Application.Ex1PredicateUsingLambda.executor&quot;: &quot;Run&quot;,
+    &quot;Application.Ex1Record.executor&quot;: &quot;Run&quot;,
+    &quot;Application.Ex1SealedClasses.executor&quot;: &quot;Run&quot;,
+    &quot;Application.Ex2EnumWithFieldsAndConstructor.executor&quot;: &quot;Run&quot;,
+    &quot;Application.Ex2GenericSyntax.executor&quot;: &quot;Run&quot;,
+    &quot;Application.Ex2HashCodeNotUsed.executor&quot;: &quot;Run&quot;,
+    &quot;Application.Ex2PredicateUsingAnonymousClass.executor&quot;: &quot;Run&quot;,
+    &quot;Application.Ex2RecordUseCase.executor&quot;: &quot;Run&quot;,
+    &quot;Application.Ex2WithCovariantType.executor&quot;: &quot;Run&quot;,
+    &quot;Application.Ex3EnumWithMethod.executor&quot;: &quot;Run&quot;,
+    &quot;Application.Ex3GenericMethod.executor&quot;: &quot;Run&quot;,
+    &quot;Application.Ex3MethodChaining.executor&quot;: &quot;Run&quot;,
+    &quot;Application.Ex3ModernWayForHashCode.executor&quot;: &quot;Run&quot;,
+    &quot;Application.Ex4CovariantReturnTypeWithInterface.executor&quot;: &quot;Run&quot;,
+    &quot;Application.Ex4EnumMethods.executor&quot;: &quot;Run&quot;,
+    &quot;Application.Ex4MultipleTypeParameters.executor&quot;: &quot;Run&quot;,
+    &quot;Application.Ex4ToStringMethod.executor&quot;: &quot;Run&quot;,
+    &quot;Application.Ex5BoundedTypeParameterUpperBound.executor&quot;: &quot;Run&quot;,
+    &quot;Application.Ex5EnumWithSwitch.executor&quot;: &quot;Run&quot;,
+    &quot;Application.Ex6BoundedTypeParameterLowerBound2.executor&quot;: &quot;Run&quot;,
+    &quot;Application.Ex6EnumWithCustomBehaviourAndFields.executor&quot;: &quot;Run&quot;,
+    &quot;Application.Ex7EnumWithInterfaces.executor&quot;: &quot;Run&quot;,
+    &quot;Application.Ex7UpperAndLowerBoundParameters.executor&quot;: &quot;Run&quot;,
+    &quot;Application.Ex8EnumWithInterfaces.executor&quot;: &quot;Run&quot;,
+    &quot;Application.Ex8GenericInterfaces.executor&quot;: &quot;Run&quot;,
+    &quot;Application.HashCodeMethodEx1.executor&quot;: &quot;Run&quot;,
+    &quot;Application.HashCodeNotUsedEx.executor&quot;: &quot;Run&quot;,
+    &quot;Application.MarkerInterfaceEx1.executor&quot;: &quot;Run&quot;,
+    &quot;Application.ReflectionEx1.executor&quot;: &quot;Run&quot;,
+    &quot;Application.RobustCloneImplementationEx1.executor&quot;: &quot;Run&quot;,
+    &quot;Application.ShallowAndDeepCopyEx1.executor&quot;: &quot;Run&quot;,
+    &quot;Application.ShallowCopyProblemWithObjectArrays.executor&quot;: &quot;Run&quot;,
+    &quot;Application.StaticNestedClass.executor&quot;: &quot;Run&quot;,
+    &quot;Application.StaticNestedClassRealWorldCompleteEx2.executor&quot;: &quot;Run&quot;,
+    &quot;Application.StaticNestedClassRealWorldCompleteEx3.executor&quot;: &quot;Run&quot;,
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.git.unshallow&quot;: &quot;true&quot;,
+    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
+    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
+    &quot;dart.analysis.tool.window.visible&quot;: &quot;false&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;main&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/Users/iarsh/Downloads/LearnSpringFramework-master/0JavaProjects/JavaTutorial/src/main/java/org/akk/oop2_advance/k_enum&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;Console&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
       <recent name="C:\Users\iarsh\Downloads\LearnSpringFramework-master\0JavaProjects\JavaTutorial\src\main\java\org\akk\oop2_advance\k_enum" />
@@ -194,7 +178,9 @@
       <workItem from="1760606514564" duration="4519000" />
       <workItem from="1760678741739" duration="14120000" />
       <workItem from="1761798327287" duration="6465000" />
-      <workItem from="1761904474137" duration="5231000" />
+      <workItem from="1761904474137" duration="6519000" />
+      <workItem from="1762146309829" duration="2599000" />
+      <workItem from="1762150010498" duration="320000" />
     </task>
     <task id="LOCAL-00001" summary="Classes, Objects, Encapsulation and Abstraction Modules are created with examples">
       <option name="closed" value="true" />
@@ -388,7 +374,31 @@
       <option name="project" value="LOCAL" />
       <updated>1760679394697</updated>
     </task>
-    <option name="localTasksCounter" value="25" />
+    <task id="LOCAL-00025" summary="Enum examples are created">
+      <option name="closed" value="true" />
+      <created>1761912922208</created>
+      <option name="number" value="00025" />
+      <option name="presentableId" value="LOCAL-00025" />
+      <option name="project" value="LOCAL" />
+      <updated>1761912922208</updated>
+    </task>
+    <task id="LOCAL-00026" summary="Enum examples with Method is created">
+      <option name="closed" value="true" />
+      <created>1762149352700</created>
+      <option name="number" value="00026" />
+      <option name="presentableId" value="LOCAL-00026" />
+      <option name="project" value="LOCAL" />
+      <updated>1762149352700</updated>
+    </task>
+    <task id="LOCAL-00027" summary="Predicate(Functional Interface) examples are created">
+      <option name="closed" value="true" />
+      <created>1762149424902</created>
+      <option name="number" value="00027" />
+      <option name="presentableId" value="LOCAL-00027" />
+      <option name="project" value="LOCAL" />
+      <updated>1762149424902</updated>
+    </task>
+    <option name="localTasksCounter" value="28" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -406,7 +416,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="Classes, Objects, Encapsulation and Abstraction Modules are created with examples" />
     <MESSAGE value="Polymorphism introduction and compile time and run time polymorphism example files are created" />
     <MESSAGE value="Virtual method table example added, Enhanced Switch example added, Aggregation, composistion and associatin example added" />
     <MESSAGE value="Inner classes examples are created (Member Inner class, Static Nested Class, Local Inner Class)" />
@@ -429,6 +438,9 @@
     <MESSAGE value="Basic Generic example of classes and methods are uploaded" />
     <MESSAGE value="Examples for Multiple type parameters created" />
     <MESSAGE value="examples for Bounded type parameter (Upper Bound and Lower Bound) and Generic Interface created" />
-    <option name="LAST_COMMIT_MESSAGE" value="examples for Bounded type parameter (Upper Bound and Lower Bound) and Generic Interface created" />
+    <MESSAGE value="Enum examples are created" />
+    <MESSAGE value="Enum examples with Method is created" />
+    <MESSAGE value="Predicate(Functional Interface) examples are created" />
+    <option name="LAST_COMMIT_MESSAGE" value="Predicate(Functional Interface) examples are created" />
   </component>
 </project>
