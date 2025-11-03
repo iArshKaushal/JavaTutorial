@@ -1,0 +1,62 @@
+🧩 What Are Records in Java?
+----------------------------------
+Records are a special kind of class introduced in Java 14 (preview) and made official in Java 16.
+They are designed to be transparent carriers of immutable data — essentially data classes that automatically handle:
+    Constructors
+    equals()
+    hashCode()
+    toString()
+    Accessors (getters)
+
+🧱 Key Characteristics
+===================================
+Feature	                        Description
+----------------------------------------------------------------------------------------------
+Immutability	                All fields are final and cannot change after construction.
+Compact syntax	                No need to write boilerplate code.
+Value-based equality	        equals() and hashCode() are based on data, not object identity.
+Transparent behavior	        toString() prints all components clearly.
+Cannot extend other classes	    Records are implicitly final and extend java.lang.Record.
+Can implement interfaces	    ✅ Yes, records can implement interfaces.
+
+
+🚫 Limitations of Records
+===========================
+Limitation	                            Explanation
+-----------------------------------------------------------------------------------------------
+Cannot extend another class	            Because they implicitly extend java.lang.Record.
+Fields are final	                    You can’t make them mutable.
+No setter methods	                    By design — immutability enforced.
+Not suited for complex domain models	Best for simple data carriers (DTOs, config objects, etc.).
+
+
+🧠 When to Use Records
+--------------------------
+✅ Use records when:
+    You’re defining data transfer objects (DTOs)
+    You’re holding configuration or value objects
+    Equality is data-based, not identity-based
+    You want clean, immutable, thread-safe data holders
+
+🚫 Avoid when:
+    You need mutable state
+    You require custom inheritance hierarchy
+
+
+🧩 In short:
+Records are concise, immutable, data-carrying classes — perfect for modern Java programming, especially in APIs and microservices.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
