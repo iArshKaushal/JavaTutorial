@@ -5,6 +5,7 @@ public class EnhancedSwitch {
 
     void print(){
         int day = 3;
+
         String result = switch (day) {
             case 1 -> "Monday";
             case 2 -> "Tuesday";
