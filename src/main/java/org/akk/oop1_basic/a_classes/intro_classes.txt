@@ -1,0 +1,10 @@
+What is class?
+
+
+
+Type of Classes in Java
+    - Normal Class
+    - Abstract Class : must be inherited, because object of this class cannot be created
+    - Final Class : can not be inherited
+    - Record Class
+    - Sealed Class : when you want a class that has the features of both Abstract class and Final class (something in between)
