@@ -1,4 +1,4 @@
-package org.akk.z1_other_concepts.other.predicate;
+package org.akk.z1_other_concepts.other.a_predicate;
 
 
 import java.util.function.Predicate;

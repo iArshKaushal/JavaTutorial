@@ -1,0 +1,17 @@
+In Java, Optional is a container object that may or may not contain a non-null value.
+Introduced in Java 8, its primary purpose is to help developers manage and reduce
+the occurrence of NullPointerException by providing a more explicit way to handle the potential absence of a value.
+
+
+Key Methods for Interaction:
+=============================
+    *   Optional.of(value): Creates an Optional with a non-null value. Throws NullPointerException if value is null.
+    *   Optional.ofNullable(value): Creates an Optional with the specified value, or an empty Optional if the value is null.
+    *   Optional.empty(): Returns an empty Optional instance.
+    *   isPresent(): Returns true if a value is present, false otherwise.
+    *   get(): Returns the value if present, otherwise throws NoSuchElementException.
+    *   orElse(other): Returns the value if present, otherwise returns a provided default other value.
+    *   orElseGet(supplier): Returns the value if present, otherwise returns the result of invoking the provided supplier.
+    *   ifPresent(consumer): If a value is present, performs the given action with the value.
+    *   map(mapper): If a value is present, applies the mapping function to it and returns an Optional describing the result.
+    *   flatMap(mapper): Similar to map, but the mapping function itself returns an Optional, which is then flattened.
