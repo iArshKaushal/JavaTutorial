@@ -39,7 +39,7 @@ public class Ex1Comparator {
         Collections.sort(people, (p1, p2) -> Integer.compare(p1.getAge(), p2.getAge()));
         System.out.println("Sorted by Age: " + people);
 
-        // Sorting by name using Comparator.comparing()
+        /// Sorting by name using Comparator.comparing()
         Collections.sort(people, Comparator.comparing(Person::getName));
         System.out.println("Sorted by Name: " + people);
     }

@@ -1,0 +1,63 @@
+// 1️⃣ Predicate
+// 2️⃣ Consumer
+// 3. Supplier
+// 4. comparator
+
+
+💠💠💠💠💠💠💠💠💠💠💠💠💠💠💠💠💠💠💠💠
+5️⃣ Function<T, R>
+💠💠💠💠💠💠💠💠💠💠💠💠💠💠💠💠💠💠💠💠
+The Function<T, R> interface in Java is a functional interface introduced in Java 8 as part of the java.util.function package.
+It represents a function that accepts one argument of type T and produces a result of type R.
+
+Here's a breakdown of its key aspects:
+=====================================
+- Functional Interface:
+    It is annotated with @FunctionalInterface, signifying that it has exactly one abstract method.
+    This makes it suitable for use with lambda expressions and method references.
+
+- Generics:
+    T represents the type of the input argument, and
+    R represents the type of the result returned by the function.
+    These types can be different.
+
+- Abstract Method:
+    The single abstract method is apply(T t), which takes an argument of type T and returns a result of type R.
+
+- Purpose:
+    The Function interface is primarily used for mapping scenarios,
+    where you need to transform an object of one type into an object of another type.
+    For example,
+        converting a list of String objects to a list of Integer objects.
+
+- Usage with Lambdas:
+    Its functional nature allows for concise implementation using lambda expressions.
+
+
+💠💠💠💠💠💠💠💠💠💠💠💠💠💠💠💠💠💠💠💠
+6️⃣ BiFunction :
+💠💠💠💠💠💠💠💠💠💠💠💠💠💠💠💠💠💠💠💠
+public interface BiFunction<T, U, R>
+
+In Java, a BiFunction is a functional interface introduced in Java 8 as part of the java.util.function package.
+It represents a function that accepts two arguments and produces a result.
+
+Key characteristics of BiFunction:
+===================================
+- Functional Interface: It is annotated with @FunctionalInterface, meaning it has a single abstract method.
+- Generics: It is a generic interface with three type parameters: BiFunction<T, U, R>.
+    T: The type of the first input argument.
+    U: The type of the second input argument.
+    R: The type of the result of the function.
+
+- apply() method:
+    The core abstract method is R apply(T t, U u);.
+    This method takes two arguments of types T and U and returns a result of type R.
+
+- Lambda Expressions:
+    BiFunction instances are typically implemented using lambda expressions,
+    which provide a concise way to define the logic for the apply() method.
+
+- andThen() method:
+    It provides a default method andThen(Function<? super R, ? extends V> after).
+    This method allows for function chaining, where a Function is applied to the result of the BiFunction.
