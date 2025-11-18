@@ -1,0 +1,90 @@
+🚀 What Are Method References in Java?
+=======================================
+Method Reference is a shorthand syntax in Java used to refer to:
+    - a method
+    - or a constructor
+without actually calling them right now.
+
+They are used wherever a functional interface is expected.
+
+👉 Think of a method reference as giving a method’s address to Java
+so Java can call it later when needed.
+
+
+🎯 Why do we use Method References?
+====================================
+Because they make the code:
+    - shorter
+    - cleaner
+    - readable
+    - more expressive
+
+Compare:
+Lambda:             >>>>>>>>> list.forEach(x -> System.out.println(x));
+Method Reference:   >>>>>>>>> list.forEach(System.out::println);
+
+
+💡 Method Reference = Lambda Shortcut
+======================================
+This lambda:            >>>>>   (a, b) -> MyUtil.compare(a, b)
+can be rewritten as:    >>>>>   MyUtil::compare
+
+
+
+⭐ The Four Types of Method References : Java supports 4 types:
+=======================================
+
+| ------------------------------------------------ | --------------------------- | ---------------------------------------------------------- |
+| Type                                             | Syntax                      | Used For                                                   |
+| ------------------------------------------------ | --------------------------- | ---------------------------------------------------------- |
+| 1. Static Method Reference                       | `ClassName::staticMethod`   | referencing static methods                                 |
+| 2. Instance Method Reference (specific object)   | `obj::instanceMethod`       | referencing instance methods of an object                  |
+| 3. Instance Method Reference (object of a class) | `ClassName::instanceMethod` | special case used when the instance is supplied at runtime |
+| 4. Constructor Reference                         | `ClassName::new`            | referencing constructors                                   |
+| ------------------------------------------------ | --------------------------- | ---------------------------------------------------------- |
+
+
+
+
+
+
+
+
+
+
+
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+FROM GeeksforGeeks
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+
+What is function reference
+==========================
+In Java, a method is a collection of statements that perform some specific task and return the result to the caller.
+A method reference is the shorthand syntax for a lambda expression that contains just one method call. In general,
+one does not have to pass arguments to method references.
+
+Why Use Method References?
+===========================
+Method references are used for the following reasons, which are listed below:
+    - Method references enhance readability, which makes the code easier to understand.
+    - It supports a functional programming style that works well with streams and collections.
+    - Reusability increases because we can directly use the existing methods.
+
+
+Key Benefits of Method References
+==================================
+The key benefits of method references are listed below:
+    - Improved Readability: Method references simplify the code by removing boilerplate syntax.
+    - Reusability: Existing methods can be directly reused, enhancing modularity.
+    - Functional Programming Support: They work seamlessly with functional interfaces and lambdas.
+
+
+
+Types of Method References
+=============================
+There are four type method references that are as follows:
+
+- Static Method Reference
+- Instance Method Reference of a particular object
+- Instance Method Reference of an arbitrary object of a particular type
+- Constructor Reference

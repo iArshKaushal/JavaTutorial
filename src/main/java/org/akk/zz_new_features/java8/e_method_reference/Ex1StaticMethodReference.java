@@ -9,7 +9,7 @@ class StaticMethodReference{
     }
 }
 
-public class Ex1MethodReference {
+public class Ex1StaticMethodReference {
 
 
     public static void main(String[] args) {
