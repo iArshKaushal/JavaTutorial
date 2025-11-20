@@ -19,7 +19,8 @@ public class ExStreamApiLazyEvaluation {
             return x.startsWith("A");
         });
         System.out.println("Before terminal operation...");
-        s.count(); // <---------- Only now filtering happens
+        long count = s.count(); // <---------- Only now filtering happens
+        System.out.println("After terminal operation...(Total Count of words what starts with 'A': " + count + ")");
 
     }
 }

@@ -46,12 +46,56 @@ A Stream pipeline has three parts:
 
 
 
-🪣 5. Stream Creation (Sources)
+🪣 5. Stream Creation (Sources) :
 ===============================
 5.1 From Collections
 5.2 From Arrays
 5.3 From Static Methods
 5.4 Infinite Streams
+
+🔄 6. Intermediate Operations (Transformations)
+================================================
+Intermediate operations return another Stream, allowing method chaining.
+    6.1 filter(Predicate<T>) : Filters elements based on a condition.
+    6.2 map(Function<T, R>) : Transforms each element to another form.
+    6.3 flatMap(Function<T, Stream<R>>) : Flattens nested structures into a single stream.
+    6.4 distinct() : Removes duplicates.
+    6.5 sorted(), sorted(Comparator<T>) : Sorts stream elements.
+    6.6 peek(Consumer<T>) : Used for debugging.
+    6.7 limit(long n) and skip(long n) : Used for pagination or truncation.
+
+    # flatMap() :
+        🧩 1. The Core Idea
+        ---------------------
+            flatMap() is used to transform each element of a stream into another stream,
+            and then flatten (merge) all those resulting streams into a single stream.
+
+        🔍 2. Problem it solves
+        ------------------------
+            Suppose you use .map(), and the function you pass returns a Stream.
+            You’d then get a Stream of Streams → Stream<Stream<T>>, which is hard to work with.
+            flatMap() helps by flattening those nested streams into a single continuous stream.
+
+            🧠 3. Conceptual Difference Between map() and flatMap()
+            ---------------------------------------------------------------------
+            | Operation   | Input     | Function Result | Output                |
+            | ----------- | --------- | --------------- | --------------------- |
+            | `map()`     | Stream<T> | T → R           | Stream<R>             |
+            | `flatMap()` | Stream<T> | T → Stream<R>   | Stream<R> (flattened) |
+            --------------------------------------------------------------------
+
+
+
+🎯 7. Terminal Operations (End of Pipeline)
+============================================
+Terminal operations produce a result or side effect and consume the stream.
+
+
+
+
+
+
+
 
 
 
