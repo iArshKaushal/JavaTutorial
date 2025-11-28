@@ -4,8 +4,9 @@
 // 4. comparator
 
 
+
 💠💠💠💠💠💠💠💠💠💠💠💠💠💠💠💠💠💠💠💠
-5️⃣ Function<T, R>
+    5 Function<T, R>
 💠💠💠💠💠💠💠💠💠💠💠💠💠💠💠💠💠💠💠💠
 The Function<T, R> interface in Java is a functional interface introduced in Java 8 as part of the java.util.function package.
 It represents a function that accepts one argument of type T and produces a result of type R.
@@ -35,7 +36,7 @@ Here's a breakdown of its key aspects:
 
 
 💠💠💠💠💠💠💠💠💠💠💠💠💠💠💠💠💠💠💠💠
-6️⃣ BiFunction :
+    6 BiFunction :
 💠💠💠💠💠💠💠💠💠💠💠💠💠💠💠💠💠💠💠💠
 public interface BiFunction<T, U, R>
 

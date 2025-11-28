@@ -1,4 +1,4 @@
-package org.akk.oop2_advance.m_stream_api;
+package org.akk.oop2_advance.n_stream_api;
 
 import java.util.Arrays;
 import java.util.Comparator;

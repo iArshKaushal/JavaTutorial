@@ -1,0 +1,34 @@
+package org.akk.oop2_advance.z_multi_threading.engg_digest.g_locking.b_deadlock_in_locking;
+
+import java.util.concurrent.locks.Lock;
+import java.util.concurrent.locks.ReentrantLock;
+
+public class ReentrantExample {
+
+    private final Lock lock = new ReentrantLock();
+
+    public void outerMethod() {
+        lock.lock();
+        try {
+            System.out.println("Outer method");
+            innerMethod();
+        } finally {
+            lock.unlock();
+
+        }
+    }
+
+    public void innerMethod() {
+        lock.lock();
+        try {
+            System.out.println("Inner method");
+        } finally {
+            lock.unlock();
+        }
+    }
+
+    public static void main(String[] args) {
+        ReentrantExample example = new ReentrantExample();
+        example.outerMethod();
+    }
+}

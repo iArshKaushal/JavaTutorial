@@ -1,10 +1,7 @@
-package org.akk.oop2_advance.m_stream_api;
+package org.akk.oop2_advance.n_stream_api;
 
-import java.util.ArrayList;
 import java.util.Comparator;
 import java.util.List;
-import java.util.function.Consumer;
-import java.util.stream.Stream;
 
 class Student {
 

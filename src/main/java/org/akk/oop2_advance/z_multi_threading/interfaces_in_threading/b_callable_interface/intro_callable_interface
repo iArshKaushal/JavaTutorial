@@ -1,0 +1,20 @@
+What is callable?
+=================
+In Java, Callable is an interface within the java.util.concurrent package,
+primarily used for concurrent programming, especially with ExecutorService and Future.
+It represents a task that can be executed by another thread and,
+unlike Runnable, it can return a result and throw checked exceptions.
+
+Here are the key characteristics of Callable:
+==============================================
+- Returns a result:
+    The call() method, which must be implemented by any class implementing Callable,
+    returns a value of a generic type V. This allows you to retrieve the outcome of an asynchronous computation.
+
+- Can throw checked exceptions:
+    The call() method can declare and throw checked exceptions, enabling robust error handling in concurrent tasks.
+
+- Used with ExecutorService and Future:
+    Callable instances are typically submitted to an ExecutorService using its submit() method.
+    This method returns a Future object, which represents the pending result of the Callable task.
+    You can then use the Future to retrieve the result or check the task's status.

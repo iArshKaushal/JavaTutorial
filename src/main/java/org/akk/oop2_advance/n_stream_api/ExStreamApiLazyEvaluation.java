@@ -1,6 +1,5 @@
-package org.akk.oop2_advance.m_stream_api;
+package org.akk.oop2_advance.n_stream_api;
 
-import java.util.ArrayList;
 import java.util.List;
 import java.util.stream.Stream;
 

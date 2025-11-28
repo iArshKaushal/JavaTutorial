@@ -1,0 +1,89 @@
+What is thread pooling?
+=======================
+
+why, We need thread pooling?
+=============================
+1. Resource management
+2. Response time
+3. Control over Thread Count
+
+
+
+
+Executors Framework in Java
+=============================
+The Executors framework was introduced in Java 5
+as part of the java.util.concurrent package
+to simplify the development of concurrent applications
+by abstracting away many of the complexities involved in creating and managing threads.
+
+Problems prior to "Executors Framework"
+======================================
+- Manual Thread Management
+- Resource Management
+- Scalability
+- Thread Reuse
+- Error Handling
+
+
+Executor Framework : it have 3 main interfaces
+====================
+1. Executor
+2. ExecutorService
+3. ScheduledExecutorService
+
+Methods
+=======
+1. ExecutorServices
+    - submit(Runnable)
+    - submit(Callable)
+    - submit(Runnable, Result)
+    - shoutDown()
+    - shutDownNow()
+    - awaitTermination()
+    - isShutDown()
+    - isTerminated()
+    - invokeAll()
+
+2. Future
+    - get()
+    - get(time)
+    - isDone()
+    - isCancelled()
+
+3. ScheduledExecutorService
+    - schedule()
+    - scheduleAtFixedRate()
+    - scheduleWithFixedDelay()
+
+
+
+
+Difference between Runnable & Callable
+=======================================
+                    Runnable                            Callable
+------------------------------------------------|-------------------------------------------
+- it will not return anything                   |   it returns
+- it has a run() method                         |   it has a call() method
+- its method signature does not throw exception |   it has throw keyword in its signature
+------------------------------------------------|-------------------------------------------
+
+
+CountDownLatch
+==============
+We cannot reuse CountDownLatch.
+
+CyclicBarrier
+=============
+Yeh main thread ko block nahi karta hai
+tab use karna hai jab appko make sure karna hai jab certain number of threads ek specific point pe reach ho jaye before any of them proceed.
+CyclicBarrier ko hum reset kar sakte hai unlike CountDownLatch.
+
+CompletableFuture
+=================
+
+
+
+
+
+
