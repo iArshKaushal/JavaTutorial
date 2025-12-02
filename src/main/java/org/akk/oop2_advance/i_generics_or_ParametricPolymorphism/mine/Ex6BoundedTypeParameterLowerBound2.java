@@ -1,9 +1,8 @@
-package org.akk.oop2_advance.i_generics_or_ParametricPolymorphism;
+package org.akk.oop2_advance.i_generics_or_ParametricPolymorphism.mine;
 
 
 import java.util.ArrayList;
 import java.util.List;
-import java.util.Objects;
 
 class Vehicle{
     public void showType(){

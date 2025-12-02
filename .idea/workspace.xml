@@ -4,59 +4,34 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="33d39792-1fba-49b3-abc0-1cfea40606da" name="Changes" comment="Stream API's  intermediate and terminal operation examples. and updated documentation">
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/akk/oop2_advance/z_multi_threading/engg_digest/a_intro_thread/Ex1Test.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/akk/oop2_advance/z_multi_threading/engg_digest/a_intro_thread/World.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/akk/oop2_advance/z_multi_threading/engg_digest/b_thread_lifecycle/Ex1StatesOfThread.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/akk/oop2_advance/z_multi_threading/engg_digest/c_thread_vs_runnable/A.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/akk/oop2_advance/z_multi_threading/engg_digest/c_thread_vs_runnable/B.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/akk/oop2_advance/z_multi_threading/engg_digest/d_methods/Ex1ThreadMethods.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/akk/oop2_advance/z_multi_threading/engg_digest/e_daemon_and_user_threads/Ex1DaemonThread.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/akk/oop2_advance/z_multi_threading/engg_digest/f_synchronization/Counter.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/akk/oop2_advance/z_multi_threading/engg_digest/f_synchronization/MyThread.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/akk/oop2_advance/z_multi_threading/engg_digest/f_synchronization/Test.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/akk/oop2_advance/z_multi_threading/engg_digest/g_locking/a_intro/BankAccount.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/akk/oop2_advance/z_multi_threading/engg_digest/g_locking/a_intro/BankAccountMain.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/akk/oop2_advance/z_multi_threading/engg_digest/g_locking/b_deadlock_in_locking/ReentrantExample.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/akk/oop2_advance/z_multi_threading/engg_digest/g_locking/c_fair_and_unfair_locking/FairLockExample.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/akk/oop2_advance/z_multi_threading/engg_digest/g_locking/c_fair_and_unfair_locking/UnfairLockExample.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/akk/oop2_advance/z_multi_threading/engg_digest/g_locking/d_read_write_locks/Ex1ReadWriteCounterWithLock.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/akk/oop2_advance/z_multi_threading/engg_digest/g_locking/lock_methods.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/akk/oop2_advance/z_multi_threading/engg_digest/h_deadlock/DeadLockExample.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/akk/oop2_advance/z_multi_threading/engg_digest/i_thread_communication/ThreadCommunication.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/akk/oop2_advance/z_multi_threading/engg_digest/j_thread_safety/a_volatile/Ex1Volatile.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/akk/oop2_advance/z_multi_threading/engg_digest/j_thread_safety/a_volatile/Ex2AtomicityVolatileCounter.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/akk/oop2_advance/z_multi_threading/engg_digest/k_thread_using_lambda/LambdaExample.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/akk/oop2_advance/z_multi_threading/engg_digest/l_thread_pooling/executors_framework/Ex10ProblemWithExecuteService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/akk/oop2_advance/z_multi_threading/engg_digest/l_thread_pooling/executors_framework/Ex11CountDownLatch.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/akk/oop2_advance/z_multi_threading/engg_digest/l_thread_pooling/executors_framework/Ex12CountDownLatchWithoutExecutor.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/akk/oop2_advance/z_multi_threading/engg_digest/l_thread_pooling/executors_framework/Ex13CyclicBarrier.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/akk/oop2_advance/z_multi_threading/engg_digest/l_thread_pooling/executors_framework/Ex14CyclicBarrierUseCase.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/akk/oop2_advance/z_multi_threading/engg_digest/l_thread_pooling/executors_framework/Ex15CompletableFuture.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/akk/oop2_advance/z_multi_threading/engg_digest/l_thread_pooling/executors_framework/Ex16CompletableFutureMethods.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/akk/oop2_advance/z_multi_threading/engg_digest/l_thread_pooling/executors_framework/Ex1WithoutExecutorsFramework.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/akk/oop2_advance/z_multi_threading/engg_digest/l_thread_pooling/executors_framework/Ex2UsingExecutorsFramework.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/akk/oop2_advance/z_multi_threading/engg_digest/l_thread_pooling/executors_framework/Ex3ReturnWithExecutor.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/akk/oop2_advance/z_multi_threading/engg_digest/l_thread_pooling/executors_framework/Ex4ExecutorServiceMethod.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/akk/oop2_advance/z_multi_threading/engg_digest/l_thread_pooling/executors_framework/Ex5InvokeAllMethod.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/akk/oop2_advance/z_multi_threading/engg_digest/l_thread_pooling/executors_framework/Ex6InvokeAnyMethod.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/akk/oop2_advance/z_multi_threading/engg_digest/l_thread_pooling/executors_framework/Ex7GetMethodOfFuture.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/akk/oop2_advance/z_multi_threading/engg_digest/l_thread_pooling/executors_framework/Ex8CachedThreadPool.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/akk/oop2_advance/z_multi_threading/engg_digest/l_thread_pooling/executors_framework/Ex9ScheduledExecutorService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/akk/oop2_advance/z_multi_threading/engg_digest/l_thread_pooling/intro_thread_pooling" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/akk/oop2_advance/z_multi_threading/interfaces_in_threading/b_callable_interface/Ex1CallableInterface.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/akk/oop2_advance/z_multi_threading/interfaces_in_threading/b_callable_interface/intro_callable_interface" afterDir="false" />
+    <list default="true" id="33d39792-1fba-49b3-abc0-1cfea40606da" name="Changes" comment="Multithreading topics and examples">
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/akk/oop1_basic/i_strings/Ex1Strings.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/akk/oop1_basic/i_strings/Ex2StringBuilder.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/akk/oop1_basic/i_strings/Ex3StringBufferThreadSafe.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/akk/oop1_basic/i_strings/Ex3StringBuilderNotThreadSafe.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/akk/oop1_basic/i_strings/Ex4StringPerformanceCalculator.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/akk/oop1_basic/i_strings/intro_strings" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/akk/oop2_advance/o_java_io/Ex1Scanner.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/akk/oop2_advance/o_java_io/a_io_streams/byte_streams/Ex1ByteStreams.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/akk/oop2_advance/o_java_io/a_io_streams/character_stream/Ex1FileReaderCharacterStream.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/akk/oop2_advance/o_java_io/a_io_streams/character_stream/Ex2BufferedReaderCharacterStream.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/akk/oop2_advance/o_java_io/a_io_streams/character_stream/Ex3BufferedWriterCharacterStream.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/akk/oop2_advance/o_java_io/files/FilePaths.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/akk/oop2_advance/o_java_io/files/demo1.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/akk/oop2_advance/o_java_io/files/demo2.txt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/akk/oop2_advance/m_stream_api/Ex1BeforeStreamApi.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/akk/oop2_advance/n_stream_api/Ex1BeforeStreamApi.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/akk/oop2_advance/m_stream_api/Ex2FilterUsingStreamApi.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/akk/oop2_advance/n_stream_api/Ex2FilterUsingStreamApi.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/akk/oop2_advance/m_stream_api/Ex3WaysToGetStreamObject.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/akk/oop2_advance/n_stream_api/Ex3WaysToGetStreamObject.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/akk/oop2_advance/m_stream_api/Ex4StreamApiMethods.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/akk/oop2_advance/n_stream_api/Ex4StreamApiMethods.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/akk/oop2_advance/m_stream_api/Ex5StreamApiSortedMethod.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/akk/oop2_advance/n_stream_api/Ex5StreamApiSortedMethod.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/akk/oop2_advance/m_stream_api/Ex6StreamApiIntermediateOperations.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/akk/oop2_advance/n_stream_api/Ex6StreamApiIntermediateOperations.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/akk/oop2_advance/m_stream_api/Ex7StreamApiTerminalOperations.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/akk/oop2_advance/n_stream_api/Ex7StreamApiTerminalOperations.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/akk/oop2_advance/m_stream_api/ExStreamApiLazyEvaluation.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/akk/oop2_advance/n_stream_api/ExStreamApiLazyEvaluation.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/akk/oop2_advance/m_stream_api/intro_stream_api" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/akk/oop2_advance/n_stream_api/intro_stream_api" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/akk/z1_other_concepts/other/intro_functional_interfaces.txt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/akk/z1_other_concepts/other/intro_functional_interfaces.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/akk/oop2_advance/i_generics_or_ParametricPolymorphism/Ex1Generics.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/akk/oop2_advance/i_generics_or_ParametricPolymorphism/mine/Ex1Generics.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/akk/oop2_advance/i_generics_or_ParametricPolymorphism/Ex2GenericClassSyntax.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/akk/oop2_advance/i_generics_or_ParametricPolymorphism/mine/Ex2GenericClassSyntax.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/akk/oop2_advance/i_generics_or_ParametricPolymorphism/Ex3GenericMethod.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/akk/oop2_advance/i_generics_or_ParametricPolymorphism/mine/Ex3GenericMethod.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/akk/oop2_advance/i_generics_or_ParametricPolymorphism/Ex4MultipleTypeParameters.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/akk/oop2_advance/i_generics_or_ParametricPolymorphism/mine/Ex4MultipleTypeParameters.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/akk/oop2_advance/i_generics_or_ParametricPolymorphism/Ex5BoundedTypeParameterUpperBound.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/akk/oop2_advance/i_generics_or_ParametricPolymorphism/mine/Ex5BoundedTypeParameterUpperBound.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/akk/oop2_advance/i_generics_or_ParametricPolymorphism/Ex6BoundedTypeParameterLowerBound.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/akk/oop2_advance/i_generics_or_ParametricPolymorphism/mine/Ex6BoundedTypeParameterLowerBound.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/akk/oop2_advance/i_generics_or_ParametricPolymorphism/Ex6BoundedTypeParameterLowerBound2.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/akk/oop2_advance/i_generics_or_ParametricPolymorphism/mine/Ex6BoundedTypeParameterLowerBound2.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/akk/oop2_advance/i_generics_or_ParametricPolymorphism/Ex7UpperAndLowerBoundParameters.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/akk/oop2_advance/i_generics_or_ParametricPolymorphism/mine/Ex7UpperAndLowerBoundParameters.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/akk/oop2_advance/i_generics_or_ParametricPolymorphism/Ex8GenericInterfaces.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/akk/oop2_advance/i_generics_or_ParametricPolymorphism/mine/Ex8GenericInterfaces.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/akk/oop2_advance/i_generics_or_ParametricPolymorphism/intro_generics.txt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/akk/oop2_advance/i_generics_or_ParametricPolymorphism/mine/intro_generics.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/akk/oop2_advance/z_multi_threading/engg_digest/j_thread_safety/a_volatile/Ex2AtomicityVolatileCounter.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/akk/oop2_advance/z_multi_threading/engg_digest/j_thread_safety/a_volatile/Ex2AtomicityVolatileCounter.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/akk/oop2_advance/z_multi_threading/engg_digest/j_thread_safety/b_atomic_classes/Ex1AtomicClasses.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/akk/oop2_advance/z_multi_threading/engg_digest/j_thread_safety/b_atomic_classes/Ex1AtomicClasses.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -125,7 +100,9 @@
     "Application.Ex14CyclicBarrierUseCase.executor": "Run",
     "Application.Ex15CompletableFuture.executor": "Run",
     "Application.Ex16CompletableFutureMethods.executor": "Run",
+    "Application.Ex1AtomicClasses.executor": "Run",
     "Application.Ex1BeforeStreamApi.executor": "Run",
+    "Application.Ex1ByteStreams.executor": "Run",
     "Application.Ex1Comparator.executor": "Run",
     "Application.Ex1ComputerBuilder.executor": "Run",
     "Application.Ex1ConsumerInterface.executor": "Run",
@@ -139,11 +116,15 @@
     "Application.Ex1PredicateUsingLambda.executor": "Run",
     "Application.Ex1ReadWriteCounterWithLock.executor": "Run",
     "Application.Ex1Record.executor": "Run",
+    "Application.Ex1Scanner.executor": "Run",
     "Application.Ex1SealedClasses.executor": "Run",
+    "Application.Ex1Strings.executor": "Run",
     "Application.Ex1SupplierInterface.executor": "Run",
     "Application.Ex1Test.executor": "Run",
     "Application.Ex1Volatile.executor": "Run",
     "Application.Ex2AtomicityVolatileCounter.executor": "Run",
+    "Application.Ex2CharacterStreamWithBufferReader.executor": "Run",
+    "Application.Ex2CharacterStreams.executor": "Run",
     "Application.Ex2EnumWithFieldsAndConstructor.executor": "Run",
     "Application.Ex2FilterUsingStreamApi.executor": "Run",
     "Application.Ex2GenericSyntax.executor": "Run",
@@ -151,8 +132,10 @@
     "Application.Ex2MyComputerBuilder.executor": "Run",
     "Application.Ex2PredicateUsingAnonymousClass.executor": "Run",
     "Application.Ex2RecordUseCase.executor": "Run",
+    "Application.Ex2StringBuilder.executor": "Run",
     "Application.Ex2UsingExecutorsFramework.executor": "Run",
     "Application.Ex2WithCovariantType.executor": "Run",
+    "Application.Ex3BufferedWriterCharacterStream.executor": "Run",
     "Application.Ex3ConstructorReferenceMethod.executor": "Run",
     "Application.Ex3EnumWithMethod.executor": "Run",
     "Application.Ex3GenericMethod.executor": "Run",
@@ -160,6 +143,8 @@
     "Application.Ex3MethodChaining.executor": "Run",
     "Application.Ex3ModernWayForHashCode.executor": "Run",
     "Application.Ex3ReturnWithExecutor.executor": "Run",
+    "Application.Ex3StringBufferThreadSafe.executor": "Run",
+    "Application.Ex3StringBuilderNotThreadSafe.executor": "Run",
     "Application.Ex3WaysToGetStreamObject.executor": "Run",
     "Application.Ex4ArrayConstructorReference.executor": "Run",
     "Application.Ex4CovariantReturnTypeWithInterface.executor": "Run",
@@ -169,6 +154,7 @@
     "Application.Ex4InvokeAllMethod.executor": "Run",
     "Application.Ex4MultipleTypeParameters.executor": "Run",
     "Application.Ex4StreamApiMethods.executor": "Run",
+    "Application.Ex4StringPerformanceCalculator.executor": "Run",
     "Application.Ex4ToStringMethod.executor": "Run",
     "Application.Ex5BoundedTypeParameterUpperBound.executor": "Run",
     "Application.Ex5EnumWithSwitch.executor": "Run",
@@ -211,7 +197,7 @@
     "WebServerToolWindowFactoryState": "false",
     "dart.analysis.tool.window.visible": "false",
     "git-widget-placeholder": "main",
-    "last_opened_file_path": "C:/Users/iarsh/Downloads/LearnSpringFramework-master/0JavaProjects/JavaTutorial/src/main/java/org/akk/oop2_advance/z_multi_threading/engg_digest/l_thread_pooling/executors_framework",
+    "last_opened_file_path": "C:/Users/iarsh/Downloads/LearnSpringFramework-master/0JavaProjects/JavaTutorial/src/main/java/org/akk/oop1_basic/i_strings",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
@@ -223,15 +209,18 @@
 }]]></component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\iarsh\Downloads\LearnSpringFramework-master\0JavaProjects\JavaTutorial\src\main\java\org\akk\oop1_basic\i_strings" />
+      <recent name="C:\Users\iarsh\Downloads\LearnSpringFramework-master\0JavaProjects\JavaTutorial\src\main\java\org\akk\oop2_advance\z_multi_threading\engg_digest\j_thread_safety\b_atomic_classes" />
       <recent name="C:\Users\iarsh\Downloads\LearnSpringFramework-master\0JavaProjects\JavaTutorial\src\main\java\org\akk\oop2_advance\z_multi_threading\engg_digest\l_thread_pooling\executors_framework" />
       <recent name="C:\Users\iarsh\Downloads\LearnSpringFramework-master\0JavaProjects\JavaTutorial\src\main\java\org\akk\oop2_advance\k_enum" />
       <recent name="C:\Users\iarsh\Downloads\LearnSpringFramework-master\0JavaProjects\JavaTutorial\src\main\java\org\akk\oop_basic\d_abstraction" />
-      <recent name="C:\Users\iarsh\Downloads\LearnSpringFramework-master\0JavaProjects\JavaTutorial\src\main\java\org\akk" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\iarsh\Downloads\LearnSpringFramework-master\0JavaProjects\JavaTutorial\src\main\java\org\akk\oop2_advance\i_generics_or_ParametricPolymorphism\mine" />
       <recent name="C:\Users\iarsh\Downloads\LearnSpringFramework-master\0JavaProjects\JavaTutorial\src\main\java\org\akk\oop1_basic\h_interfaces\c_marker_interface" />
     </key>
     <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="org.akk.oop2_advance.o_java_io.a_io_streams.character_stream" />
       <recent name="org.akk.oop2_advance.z_multi_threading.engg_digest.l_thread_pooling.executors_framework" />
       <recent name="org.akk.oop2_advance.z_multi_threading.engg_digest.f_synchronization.locking" />
     </key>
@@ -303,7 +292,9 @@
       <workItem from="1764305095564" duration="4002000" />
       <workItem from="1764323714194" duration="140000" />
       <workItem from="1764323866170" duration="1138000" />
-      <workItem from="1764325778801" duration="5483000" />
+      <workItem from="1764325778801" duration="6007000" />
+      <workItem from="1764564180113" duration="15484000" />
+      <workItem from="1764649922726" duration="4491000" />
     </task>
     <task id="LOCAL-00001" summary="Classes, Objects, Encapsulation and Abstraction Modules are created with examples">
       <option name="closed" value="true" />
@@ -617,7 +608,15 @@
       <option name="project" value="LOCAL" />
       <updated>1763643548393</updated>
     </task>
-    <option name="localTasksCounter" value="40" />
+    <task id="LOCAL-00040" summary="Multithreading topics and examples">
+      <option name="closed" value="true" />
+      <created>1764335345118</created>
+      <option name="number" value="00040" />
+      <option name="presentableId" value="LOCAL-00040" />
+      <option name="project" value="LOCAL" />
+      <updated>1764335345118</updated>
+    </task>
+    <option name="localTasksCounter" value="41" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -635,7 +634,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="Static Factory Method" />
     <MESSAGE value="Deep Copy manual Example" />
     <MESSAGE value="Robust Clone implementation Example" />
     <MESSAGE value="Cloning intro and interview questions are updated" />
@@ -660,7 +658,8 @@
     <MESSAGE value="Functional Interfaces from Java 8" />
     <MESSAGE value="Design Pattern - Builder DP" />
     <MESSAGE value="Stream API's  intermediate and terminal operation examples. and updated documentation" />
-    <option name="LAST_COMMIT_MESSAGE" value="Stream API's  intermediate and terminal operation examples. and updated documentation" />
+    <MESSAGE value="Multithreading topics and examples" />
+    <option name="LAST_COMMIT_MESSAGE" value="Multithreading topics and examples" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
