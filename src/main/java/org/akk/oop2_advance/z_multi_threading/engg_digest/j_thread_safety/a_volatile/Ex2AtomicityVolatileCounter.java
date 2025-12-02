@@ -2,11 +2,11 @@ package org.akk.oop2_advance.z_multi_threading.engg_digest.j_thread_safety.a_vol
 
 /** Description of Code
  * Here we will see what is "Atomicity" and can "volatile" keyword solve it.
+ * No Volatile keyword can not solve it, because,
  * When we run the code it will not print the accurate result (2000) everytime.
  * */
 
 class VolatileCounter {
-
     private int counter = 0;
 
     public void increment() {

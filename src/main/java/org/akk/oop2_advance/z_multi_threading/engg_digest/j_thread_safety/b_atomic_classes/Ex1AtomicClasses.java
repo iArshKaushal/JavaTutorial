@@ -1,7 +1,5 @@
 package org.akk.oop2_advance.z_multi_threading.engg_digest.j_thread_safety.b_atomic_classes;
 
-import org.akk.oop2_advance.z_multi_threading.engg_digest.c_thread_vs_runnable.A;
-
 import java.util.concurrent.atomic.AtomicInteger;
 
 /** Description of Code
@@ -9,9 +7,11 @@ import java.util.concurrent.atomic.AtomicInteger;
  * When we run the code it will not print the accurate result (2000) everytime.
  * */
 
-class VolatileCounter {
+class AtomicClassCounter {
 
     private AtomicInteger counter = new AtomicInteger(0);
+    String s = "";
+    Integer ii = 0;
 
     public void increment() {
         int i = counter.incrementAndGet();
@@ -27,7 +27,7 @@ public class Ex1AtomicClasses {
 
 
     public static void main(String[] args) throws InterruptedException {
-        VolatileCounter vc = new VolatileCounter();
+        AtomicClassCounter vc = new AtomicClassCounter();
 
         Thread t1 = new Thread(()->{
             for (int i = 0; i < 1000; i++) {
