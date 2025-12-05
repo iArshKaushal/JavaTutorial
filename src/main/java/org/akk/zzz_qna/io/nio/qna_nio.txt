@@ -1,0 +1,9 @@
+
+
+| Question                               | Skill Checked          |
+| -------------------------------------- | ---------------------- |
+| Difference between Channels & Streams  | Core understanding     |
+| How does Selector improve performance? | Server scalability     |
+| Explain Direct vs Heap buffers         | Memory & performance   |
+| Uses of FileChannel                    | Files & OS integration |
+| Scatter/Gather use cases               | NIO protocol design    |

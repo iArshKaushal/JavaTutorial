@@ -1,0 +1,125 @@
+In Java, NIO stands for New Input/Output (introduced in Java 1.4).
+It was designed to solve limitations of the traditional I/O system (java.io).
+
+⭐ What is Java NIO?
+======================
+Java NIO is a modern alternative to traditional blocking I/O.
+It supports:
+    ✔ Non-blocking I/O
+    ✔ High-performance data processing
+    ✔ Efficient file and network operations
+    ✔ Event-driven architecture (used in high-load servers)
+
+🔑 Key Concepts in Java NIO
+===============================
+| Feature       | Java IO               | Java NIO                                  |
+| ------------- | --------------------- | ----------------------------------------- |
+| Mode          | **Stream-based**      | **Buffer-based**                          |
+| Blocking      | **Always blocking**   | **Non-blocking available**                |
+| Data Handling | One-way (read/write)  | Read/Write from **same object**           |
+| Multiplexing  | ❌ No                 | ✔ **Selector** supports multiple channels |
+| Performance   | Slower for large data | Faster, scalable                          |
+
+
+
+
+🧱 Core Components of Java NIO
+====================================
+| Component        | Role                                               |
+| ---------------- | -------------------------------------------------- |
+| **Channel**      | Connection to read/write data (like a pipe)        |
+| **Buffer**       | Data container (memory block)                      |
+| **Selector**     | Handles multiple channels with a **single thread** |
+| **Path & Files** | Modern file handling utilities                     |
+
+
+
+⭐ Channel
+==============
+    🚦 What is a Channel in Java NIO?
+    --------------------------------------
+    A Channel is a bi-directional communication interface used for reading and writing data between:
+        ✔ Files
+        ✔ Sockets
+        ✔ Devices (like network connections)
+
+    📌 Unlike InputStream and OutputStream (which are one-way), a Channel can read AND write — often at the same time.
+    📌 Channels work with Buffers — data always goes:
+
+    Channel ⇄ Buffer ⇄ Application
+    📌 Channels are non-blocking & selectable, making them perfect for high-performance servers.
+
+
+🧱 Channel vs Stream — Key Differences
+=======================================
+    | Feature       | Java IO Streams           | Java NIO Channels              |
+    | ------------- | ------------------------- | ------------------------------ |
+    | Direction     | One-way (read OR write)   | Two-way (read + write)         |
+    | Performance   | Blocking                  | Can be non-blocking            |
+    | Data Handling | Byte by byte              | Uses Buffers (bulk data)       |
+    | Scalable?     | Hard for multiple clients | Designed for scalability       |
+    | Integration   | No selectors              | Uses Selector for multiplexing |
+
+
+📚 Types of Channels in Java NIO
+=====================================
+    | Channel Type                            | Description                             |
+    | --------------------------------------- | --------------------------------------- |
+    | `FileChannel`                           | For reading/writing files               |
+    | `SocketChannel`                         | TCP client connection                   |
+    | `ServerSocketChannel`                   | TCP server socket (listens for clients) |
+    | `DatagramChannel`                       | UDP communication                       |
+    | `Pipe.SinkChannel / Pipe.SourceChannel` | IPC (thread-to-thread communication)    |
+    | `AsynchronousFileChannel`               | Asynchronous file I/O                   |
+    | `AsynchronousSocketChannel`             | Async network I/O                       |
+
+
+
+📌 How the Channel Works with Buffer
+=======================================
+Basic data flow:
+
+int bytesRead = channel.read(buffer);   // Read data into buffer
+buffer.flip();                           // Prepare for read by app
+buffer.get();                            // App reads data
+buffer.clear();                          // Prepare for next read
+
+➡ flip() and clear() are critical for switching buffer modes.
+
+
+
+
+
+
+
+
+
+🎛 Channel Modes
+=================
+
+| Mode         | Meaning                                     |
+| ------------ | ------------------------------------------- |
+| Blocking     | Channel waits for operations to finish      |
+| Non-blocking | Channel returns immediately even if no data |
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
