@@ -1,4 +1,4 @@
-package org.akk.oop2_advance.q_java_io.a_io_streams.byte_streams;
+package org.akk.oop2_advance.q_java_io.a_io_streams.byte_streams.a_file_io_stream;
 
 import java.io.FileInputStream;
 import java.io.FileNotFoundException;

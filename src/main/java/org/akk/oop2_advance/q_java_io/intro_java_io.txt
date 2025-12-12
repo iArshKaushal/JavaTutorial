@@ -1,0 +1,333 @@
+What is Java I/O?
+====================
+Java I/O (Input/Output) is a core part of Java used to read data from and write data to different data sources such as:
+    ✔ Files (text, binary)
+    ✔ Keyboard (console input)
+    ✔ Network sockets
+    ✔ In-memory arrays and buffers
+    ✔ Pipes (process communication)
+
+🔹 Meaning of I/O
+===================
+    Input → Reading data into the program (keyboard/file/network → Java)
+    Output → Sending data from the program (Java → file/console/network)
+
+
+Core Concepts of Java I/O
+=============================
+Java I/O revolves around two primary concepts:
+    1. Streams
+    2. Readers/Writers.
+
+Streams:
+========
+Streams represent a sequence of data. In Java, there are two types of streams:
+    - Input streams: Input streams are used to read data from a source,
+    - Output streams: while output streams are used to write data to a destination.
+
+Streams can be categorized into
+    - Byte streams (Binary Data)        -------->   (InputStream and OutputStream) and
+    - Character streams (Text Data)     -------->   (Reader and Writer).
+
+Readers/Writers:
+================
+Readers and writers are specialized stream classes designed for handling character data.
+They provide a convenient way to read from and write to character-based data sources.
+Readers read character data from input streams, while writers write character data to output streams.
+
+
+Byte Stream Vs Character Stream
+=================================
+| Type                  | Handles                               | Base Classes                   | Common Usage                                |
+| --------------------- | ------------------------------------- | ------------------------------ | ------------------------------------------- |
+| **Byte Streams**      | Raw binary data (8-bit bytes)         | `InputStream` / `OutputStream` | Images, PDFs, audio, video, serialized data |
+| **Character Streams** | Text data (16-bit Unicode characters) | `Reader` / `Writer`            | Text files, XML, JSON, reading user input   |
+-----------------------------------------------------------------------------------------------------------------------------------------------
+
+
+
+============================================
+1️⃣ Byte Streams (Binary I/O)
+============================================
+👉 Definition:
+A byte stream reads/writes one byte (8 bits) at a time.
+Internally, it does not convert anything — data is treated as raw bytes.
+
+👉 When is it used?
+Use byte streams when the data is not text, such as:
+    - Images (.jpg, .png)
+    - Audio/video (.mp3, .mp4)
+    - PDF files
+    - ZIP files
+    - Binary protocol data
+    - Network packets (mostly binary)
+
+Classes
+~~~~~~~~~~~~~~~~~~~~~
+InputStream ----->(abstract)
+    - FileInputStream
+    - ByteArrayInputStream
+    - BufferedInputStream
+    - PipedInputStream
+    - DataInputStream
+    - FilterInputStream
+    - ObjectInputStream
+
+OutputStream ---> (abstract)
+    - FileOutputStream
+    - ByteArrayOutputStream
+    - BufferedOutputStream
+    - PipedOutputStream
+    - DataOutputStream
+    - FilterOutputStream
+    - ObjectOutputStream
+👉 Use case: Images, videos, PDF, binary files
+
+=====================================
+Byte Stream Class Hierarchy
+======================================
+
+                 InputStream (abstract)
+                       ▲
+         ┌─────────────┼────────────────────────────┐
+         │             │                            │
+ FileInputStream   ByteArrayInputStream    FilterInputStream
+                                                    ▲
+                                                    │
+                                            BufferedInputStream
+
+
+                 OutputStream (abstract)
+                       ▲
+         ┌─────────────┼────────────────────────────┐
+         │             │                            │
+ FileOutputStream  ByteArrayOutputStream    FilterOutputStream
+                                                    ▲
+                                                    │
+                                            BufferedOutputStream
+ InputStream (abstract)
+    |
+    +---> FileInputStream
+    +---> ByteArrayInputStream
+    +---> PipedInputStream
+    +---> ObjectInputStream
+    +---> FilterInputStream
+            |---> BufferedInputStream
+            |---> DataOutputStream
+            |---> PrintStream
+            |---> PushbackInputStream
+            |---> ZipInputStream
+            |---> CipherInputStream
+            |---> CheckedInputStream
+
+
+ OutputStream (abstract)
+    |
+    |---> FileOutputStream
+    |---> ByteArrayOutputStream
+    |---> FilterOutputStream
+            |---> BufferedOutputStream
+            |---> DataInputStream
+            |---> PrintStream
+            |---> PushbackOutputStream
+            |---> ZipOutputStream
+            |---> CipherOutputStream
+            |---> CheckedOutputStream
+
+
+
+Piped Streams:
+==============
+📌 What is PipedInputStream?
+-----------------------------
+    PipedInputStream is a special type of byte input stream used for Inter-Thread Communication (ITC) in Java.
+    It is always used in combination with: ➡ PipedOutputStream
+
+📌 It allows one thread to write bytes and another thread to read those bytes, like a pipe between threads.
+    Writer Thread → PipedOutputStream === pipe ===> PipedInputStream → Reader Thread
+    👉 Data flows directly through memory, not through a file or network.
+
+✔ Why do we need Piped Streams?
+----------------------------------
+✔ To share data between two threads safely
+✔ Provides synchronization automatically
+✔ No need for shared variables
+✔ Avoids manual locking and race conditions
+
+⚙ Internal Mechanism
+--------------------------
+A circular buffer is created internally. Writer stores bytes into pipe → Reader consumes them.
+
+                Writer Thread
+                   write(byte)
+                      ↓
+                 Internal Pipe Buffer (shared)
+                      ↓
+                Reader Thread
+                   read()
+
+=======================================
+⚠ Common Exceptions & Reasons
+========================================
+| --------------------------------- | ------------------------------ |
+| Error                             | Cause                          |
+| --------------------------------- | ------------------------------ |
+| `IOException: Pipe not connected` | Streams not connected properly |
+| `IOException: Write end dead`     | Reader closed before writer    |
+| `IOException: Read end dead`      | Writer closed before reader    |
+| --------------------------------- | ------------------------------ |
+
+📍 When to Use Piped Streams?
+===================================
+    ✔ Producer-Consumer pattern
+    ✔ When data is stream-based and real-time
+    ✔ Useful in older low-level async applications
+    ✔ When avoiding shared memory conflicts
+
+❌ When Not to Use?
+===================================
+    ✘ For large data storage → use Files / Channels
+    ✘ For queue-based logic → better to use BlockingQueue (modern approach)
+
+
+
+++++++++++++++++++++++++++++++++
+FilterStreams :
+++++++++++++++++++++++++++++++++
+
+🏁 Execution Flow Breakdown: BufferedInputStream
+==================================================
+| -------- | ------------------------------------ | -------------------------------------------------------------------------- |
+| Step No. | Action                               | What Happens Inside                                                        |
+| -------- | ------------------------------------ | -------------------------------------------------------------------------- |
+| 1️⃣      | new FileInputStream("bigfile.bin")    | Opens file at OS level and gets a file handle                              |
+| 2️⃣      | new BufferedInputStream(...)          | Creates an **internal buffer** (default ~8 KB) so reading becomes fast     |
+| 3️⃣      | new FileOutputStream("copy.bin")      | Creates a new empty file for output                                        |
+| 4️⃣      | new BufferedOutputStream(...)         | Creates internal write buffer (default ~8 KB)                              |
+| 5️⃣      | bis.read(buffer)                      | Reads up to 4096 bytes from disk and fills `buffer[]` from internal buffer |
+| 6️⃣      | bos.write(buffer, 0, bytesRead)       | Stores these bytes into BOS internal buffer (not directly to file)         |
+| 7️⃣      | Loop continues                        | Keeps reading + storing chunks until end-of-file                           |
+| 8️⃣      | bos.flush()                           | Forces any remaining bytes inside buffer to be written to disk             |
+| 9️⃣      | End of try-with-resources             | Automatically calls `close()` → also flushes, releases file handles        |
+| -------- | ------------------------------------ | -------------------------------------------------------------------------- |
+
+
+
+
+
+
+
+============================================
+2️⃣ Character Streams (Text I/O)
+============================================
+👉 Definition:
+A character stream reads/writes characters (16-bit Unicode).
+Java uses UTF-16 internally → this helps support Hindi, Punjabi, Emoji, German, Chinese, everything.
+
+👉 The stream automatically converts:
+    Bytes       →   Characters    →     using charset (default or custom)
+    Characters  →   Bytes         →     when writing
+
+👉 When is it used?
+Use character streams when the data is text:
+    - .txt files
+    - .csv
+    - .html
+    - .xml
+    - .json
+
+Classes
+~~~~~~~~~~~~~~~~~~~~~
+Reader
+    - FileReader
+    - BufferedReader
+    - InputStreamReader
+    - CharArrayReader
+    - StringReader
+    - PipedReader
+Writer
+    - FileWriter
+    - BufferedWriter
+    - OutputStreamWriter
+    - CharArrayWriter
+    - StringWriter
+    - PipedWriter
+👉 Use case: Human-readable text, UTF-8 handling
+
+
+
+==========================================
+🏗️ Reader and Writer Hierarchy
+==========================================
+
+               Reader (abstract)
+                      |
+   --------------------------------------------------------------------
+   |                  |                  |                 |           |
+BufferedReader   InputStreamReader   CharArrayReader   StringReader   FilterReader
+                      |
+                  FileReader
+
+
+| --------------------- | ------------------------------------------------------- |
+| Class                 | Purpose                                                 |
+| --------------------- | ------------------------------------------------------- |
+| - Reader              | Base class for character input streams                  |
+| - FileReader          | Reads text from files                                   |
+| - BufferedReader      | Improves performance + supports `readLine()`            |
+| - InputStreamReader   | Bridge between **byte stream** and **character stream** |
+| - StringReader        | Reads characters from a String like a stream            |
+| - CharArrayReader     | Reads characters from a character array                 |
+| - FilterReader        | Used to modify input (e.g., own filtering logic)        |
+| --------------------- | ------------------------------------------------------- |
+
+
+
+
+                 Writer (abstract)
+                      |
+  -----------------------------------------------------------------------
+  |            |                |                |              |        |
+BufferedWriter OutputStreamWriter CharArrayWriter StringWriter FilterWriter
+                      |
+                  FileWriter
+
+| ---------------------- | -------------------------------------------- |
+| Class                  | Purpose                                      |
+| ---------------------- | -------------------------------------------- |
+| - Writer               | Base class for writing character data        |
+| - FileWriter           | Writes characters to files                   |
+| - BufferedWriter       | Efficient writing with buffer + `newLine()`  |
+| - OutputStreamWriter   | Converts characters → bytes based on charset |
+| - StringWriter         | Writes text to a String buffer (in memory)   |
+| - CharArrayWriter      | Writes to a char array                       |
+| ---------------------- | -------------------------------------------- |
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

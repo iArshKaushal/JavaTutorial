@@ -1,4 +1,4 @@
-package org.akk.oop2_advance.q_java_io.a_io_streams.byte_streams;
+package org.akk.oop2_advance.q_java_io.a_io_streams.byte_streams.c_piped_io_stream;
 
 import java.io.IOException;
 import java.io.PipedInputStream;

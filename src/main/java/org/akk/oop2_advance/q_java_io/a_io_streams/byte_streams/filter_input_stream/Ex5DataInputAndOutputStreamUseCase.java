@@ -1,4 +1,4 @@
-package org.akk.oop2_advance.q_java_io.a_io_streams.byte_streams;
+package org.akk.oop2_advance.q_java_io.a_io_streams.byte_streams.filter_input_stream;
 
 import java.io.DataInputStream;
 import java.io.DataOutputStream;
@@ -8,12 +8,15 @@ import java.io.FileOutputStream;
 import static org.akk.zz_utils.FilePaths.ROOT_FILE_PATH;
 
 
-public class Ex7DataInputAndOutputStreamUseCase {
+public class Ex5DataInputAndOutputStreamUseCase {
 
     public static void main(String[] args) {
 
+        ///  Writing data using DataOutputStream
         SaveGameState saveGameState = new SaveGameState("Ashwani Kumar", 135, 35445, 85.5);
         saveGameState.saveStats();
+
+        ///  Reading data using DataInputStream
         try {
             DataInputStream dis = new DataInputStream(new FileInputStream(ROOT_FILE_PATH + "gamestat.dt"));
 
