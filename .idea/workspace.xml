@@ -4,16 +4,14 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="33d39792-1fba-49b3-abc0-1cfea40606da" name="Changes" comment="Java io and File Handling">
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/akk/oop2_advance/q_java_io/a_io_streams/byte_streams/filter_input_stream/Ex15PushBackInputStream.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/akk/oop2_advance/q_java_io/a_io_streams/byte_streams/filter_input_stream/Ex8FilterInputStream.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/akk/oop2_advance/q_java_io/a_io_streams/byte_streams/filter_input_stream/ExCustomFilterStream.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/akk/oop2_advance/q_java_io/c_file_handling/Ex6ImageFileFormatConversion.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/akk/oop2_advance/q_java_io/intro_java_io.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/akk/zzz_files/filterstream.txt" afterDir="false" />
+    <list default="true" id="33d39792-1fba-49b3-abc0-1cfea40606da" name="Changes" comment="Input stream class examples">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/akk/oop2_advance/q_java_io/a_io_streams/byte_streams/Ex4PipedStreamExample.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/akk/oop2_advance/q_java_io/a_io_streams/byte_streams/Ex4PipedStreamExample.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/akk/oop2_advance/q_java_io/a_io_streams/byte_streams/Ex7DataInputAndOutputStreamUseCase.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/akk/oop2_advance/q_java_io/a_io_streams/byte_streams/Ex7DataInputAndOutputStreamUseCase.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/akk/oop2_advance/q_java_io/a_io_streams/byte_streams/filter_input_stream/Ex1FilterInputStream.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/akk/oop2_advance/q_java_io/a_io_streams/byte_streams/e_filter_input_stream/Ex1FilterInputStream.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/akk/oop2_advance/q_java_io/a_io_streams/byte_streams/filter_input_stream/Ex2CustomFilterStream.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/akk/oop2_advance/q_java_io/a_io_streams/byte_streams/e_filter_input_stream/Ex2CustomFilterStream.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/akk/oop2_advance/q_java_io/a_io_streams/byte_streams/filter_input_stream/Ex3BufferedInputStream.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/akk/oop2_advance/q_java_io/a_io_streams/byte_streams/e_filter_input_stream/Ex3BufferedInputStream.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/akk/oop2_advance/q_java_io/a_io_streams/byte_streams/filter_input_stream/Ex4DataInputStreamAndDataOutputStream.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/akk/oop2_advance/q_java_io/a_io_streams/byte_streams/e_filter_input_stream/Ex4DataInputStreamAndDataOutputStream.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/akk/oop2_advance/q_java_io/a_io_streams/byte_streams/filter_input_stream/Ex5DataInputAndOutputStreamUseCase.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/akk/oop2_advance/q_java_io/a_io_streams/byte_streams/e_filter_input_stream/Ex5DataInputAndOutputStreamUseCase.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/akk/oop2_advance/q_java_io/a_io_streams/byte_streams/filter_input_stream/Ex6PushBackInputStream.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/akk/oop2_advance/q_java_io/a_io_streams/byte_streams/e_filter_input_stream/Ex6PushBackInputStream.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -63,157 +61,157 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "Application.AnonymousObjectEx1.executor": "Run",
-    "Application.ArrayCloningEx1.executor": "Run",
-    "Application.BankAccountMain.executor": "Run",
-    "Application.BuilderDesignPatternEx1.executor": "Run",
-    "Application.CovariantReturnTypeEx1.executor": "Run",
-    "Application.DeadLockExample.executor": "Run",
-    "Application.DeepArrayCloning.executor": "Run",
-    "Application.DeepCopyManualEx1.executor": "Run",
-    "Application.DeepCopyWithCopyConstructor.executor": "Run",
-    "Application.Ex10CountDownLatch.executor": "Run",
-    "Application.Ex10EnumSetCollection.executor": "Run",
-    "Application.Ex11CountDownLatch.executor": "Run",
-    "Application.Ex11EnumSetMethods.executor": "Run",
-    "Application.Ex12CountDownLatchWithoutExecutor.executor": "Run",
-    "Application.Ex14CyclicBarrierUseCase.executor": "Run",
-    "Application.Ex15CompletableFuture.executor": "Run",
-    "Application.Ex15PushBackInputStream.executor": "Run",
-    "Application.Ex16CompletableFutureMethods.executor": "Run",
-    "Application.Ex1AtomicClasses.executor": "Run",
-    "Application.Ex1BeforeStreamApi.executor": "Run",
-    "Application.Ex1ByteStreams.executor": "Run",
-    "Application.Ex1Comparator.executor": "Run",
-    "Application.Ex1ComputerBuilder.executor": "Run",
-    "Application.Ex1ConsumerInterface.executor": "Run",
-    "Application.Ex1CreateNewFile.executor": "Run",
-    "Application.Ex1DaemonThread.executor": "Run",
-    "Application.Ex1Enum.executor": "Run",
-    "Application.Ex1ExecutorsFramework.executor": "Run",
-    "Application.Ex1FilesAndDirectoryHandling.executor": "Run",
-    "Application.Ex1Generics.executor": "Run",
-    "Application.Ex1HashCodeMethod.executor": "Run",
-    "Application.Ex1MethodReference.executor": "Run",
-    "Application.Ex1OptionalContainer.executor": "Run",
-    "Application.Ex1PredicateUsingLambda.executor": "Run",
-    "Application.Ex1RandomAccessFile.executor": "Run",
-    "Application.Ex1ReadFileUsingFileChannel.executor": "Run",
-    "Application.Ex1ReadWriteCounterWithLock.executor": "Run",
-    "Application.Ex1Record.executor": "Run",
-    "Application.Ex1Scanner.executor": "Run",
-    "Application.Ex1SealedClasses.executor": "Run",
-    "Application.Ex1Strings.executor": "Run",
-    "Application.Ex1SupplierInterface.executor": "Run",
-    "Application.Ex1Test.executor": "Run",
-    "Application.Ex1Volatile.executor": "Run",
-    "Application.Ex2AtomicityVolatileCounter.executor": "Run",
-    "Application.Ex2ByteStreamCopy.executor": "Run",
-    "Application.Ex2CharacterStreamWithBufferReader.executor": "Run",
-    "Application.Ex2CharacterStreams.executor": "Run",
-    "Application.Ex2CreateNewFile.executor": "Run",
-    "Application.Ex2EnumWithFieldsAndConstructor.executor": "Run",
-    "Application.Ex2FilterUsingStreamApi.executor": "Run",
-    "Application.Ex2GameSave.executor": "Run",
-    "Application.Ex2GenericSyntax.executor": "Run",
-    "Application.Ex2HashCodeNotUsed.executor": "Run",
-    "Application.Ex2MyComputerBuilder.executor": "Run",
-    "Application.Ex2PredicateUsingAnonymousClass.executor": "Run",
-    "Application.Ex2RecordUseCase.executor": "Run",
-    "Application.Ex2StringBuilder.executor": "Run",
-    "Application.Ex2UsingExecutorsFramework.executor": "Run",
-    "Application.Ex2WithCovariantType.executor": "Run",
-    "Application.Ex3BufferedInputStream.executor": "Run",
-    "Application.Ex3BufferedWriterCharacterStream.executor": "Run",
-    "Application.Ex3ConstructorReferenceMethod.executor": "Run",
-    "Application.Ex3EnumWithMethod.executor": "Run",
-    "Application.Ex3FixedLengthStructureRAF.executor": "Run",
-    "Application.Ex3GenericMethod.executor": "Run",
-    "Application.Ex3InstanceMethodReference.executor": "Run",
-    "Application.Ex3MethodChaining.executor": "Run",
-    "Application.Ex3ModernWayForHashCode.executor": "Run",
-    "Application.Ex3OpenFileUsingDesktop.executor": "Run",
-    "Application.Ex3ReturnWithExecutor.executor": "Run",
-    "Application.Ex3StringBufferThreadSafe.executor": "Run",
-    "Application.Ex3StringBuilderNotThreadSafe.executor": "Run",
-    "Application.Ex3WaysToGetStreamObject.executor": "Run",
-    "Application.Ex4ArrayConstructorReference.executor": "Run",
-    "Application.Ex4CovariantReturnTypeWithInterface.executor": "Run",
-    "Application.Ex4EnumMethods.executor": "Run",
-    "Application.Ex4ExecutorServiceMethod.executor": "Run",
-    "Application.Ex4GameMultiSaveSlotsUsingRAF.executor": "Run",
-    "Application.Ex4InputStreamReader.executor": "Run",
-    "Application.Ex4InstanceMethodReferenceClassArbitraryObject.executor": "Run",
-    "Application.Ex4InvokeAllMethod.executor": "Run",
-    "Application.Ex4MultipleTypeParameters.executor": "Run",
-    "Application.Ex4PipedInputAndOutputStreams.executor": "Run",
-    "Application.Ex4PipedStreamExample.executor": "Run",
-    "Application.Ex4ReadFileUsingFileInputStream.executor": "Run",
-    "Application.Ex4StreamApiMethods.executor": "Run",
-    "Application.Ex4StringPerformanceCalculator.executor": "Run",
-    "Application.Ex4ToStringMethod.executor": "Run",
-    "Application.Ex5BoundedTypeParameterUpperBound.executor": "Run",
-    "Application.Ex5EnumWithSwitch.executor": "Run",
-    "Application.Ex5MethodReferenceWithCustomClass.executor": "Run",
-    "Application.Ex5OutputStreamWriter.executor": "Run",
-    "Application.Ex5PipedInputAndOutputStreams.executor": "Run",
-    "Application.Ex5ReadFileUsingNIOPackage.executor": "Run",
-    "Application.Ex5StreamApiSortedMethod.executor": "Run",
-    "Application.Ex6BoundedTypeParameterLowerBound2.executor": "Run",
-    "Application.Ex6DataInputStreamAndDataOutputStream.executor": "Run",
-    "Application.Ex6EnumWithCustomBehaviourAndFields.executor": "Run",
-    "Application.Ex6ImageFileFormatConversion.executor": "Run",
-    "Application.Ex6InvokeAnyMethod.executor": "Run",
-    "Application.Ex6MethodReferenceWithStreamsAndCustomClass.executor": "Run",
-    "Application.Ex6StreamApiIntermediateOperations.executor": "Run",
-    "Application.Ex7DataInputAndOutputStreamUseCase.executor": "Run",
-    "Application.Ex7EnumWithInterfaces.executor": "Run",
-    "Application.Ex7GetMethodOfFuture.executor": "Run",
-    "Application.Ex7ProcessCustomObjectsUsingFunction.executor": "Run",
-    "Application.Ex7ScheduledExecutorService.executor": "Run",
-    "Application.Ex7StreamApiTerminalOperations.executor": "Run",
-    "Application.Ex7UpperAndLowerBoundParameters.executor": "Run",
-    "Application.Ex8EnumWithInterfaces.executor": "Run",
-    "Application.Ex8FilterInputStream.executor": "Run",
-    "Application.Ex8GenericInterfaces.executor": "Run",
-    "Application.ExCustomFilterStream.executor": "Run",
-    "Application.ExStreamApiLazyEvaluation.executor": "Run",
-    "Application.FairLockExample.executor": "Run",
-    "Application.HashCodeMethodEx1.executor": "Run",
-    "Application.HashCodeNotUsedEx.executor": "Run",
-    "Application.LambdaExample.executor": "Run",
-    "Application.Main.executor": "Run",
-    "Application.MarkerInterfaceEx1.executor": "Run",
-    "Application.MyThread.executor": "Run",
-    "Application.PipedStreamExample.executor": "Run",
-    "Application.ReflectionEx1.executor": "Run",
-    "Application.RobustCloneImplementationEx1.executor": "Run",
-    "Application.ShallowAndDeepCopyEx1.executor": "Run",
-    "Application.ShallowCopyProblemWithObjectArrays.executor": "Run",
-    "Application.StaticNestedClass.executor": "Run",
-    "Application.StaticNestedClassRealWorldCompleteEx2.executor": "Run",
-    "Application.StaticNestedClassRealWorldCompleteEx3.executor": "Run",
-    "Application.ThreadCommunication.executor": "Run",
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "RunOnceActivity.git.unshallow": "true",
-    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
-    "SONARLINT_PRECOMMIT_ANALYSIS": "true",
-    "WebServerToolWindowFactoryState": "false",
-    "dart.analysis.tool.window.visible": "false",
-    "git-widget-placeholder": "main",
-    "last_opened_file_path": "C:/Users/iarsh/Downloads/LearnSpringFramework-master/0JavaProjects/JavaTutorial/src/main/java/org/akk/oop1_basic/i_strings",
-    "node.js.detected.package.eslint": "true",
-    "node.js.detected.package.tslint": "true",
-    "node.js.selected.package.eslint": "(autodetect)",
-    "node.js.selected.package.tslint": "(autodetect)",
-    "nodejs_package_manager_path": "npm",
-    "settings.editor.selected.configurable": "preferences.pluginManager",
-    "vue.rearranger.settings.migration": "true"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;Application.AnonymousObjectEx1.executor&quot;: &quot;Run&quot;,
+    &quot;Application.ArrayCloningEx1.executor&quot;: &quot;Run&quot;,
+    &quot;Application.BankAccountMain.executor&quot;: &quot;Run&quot;,
+    &quot;Application.BuilderDesignPatternEx1.executor&quot;: &quot;Run&quot;,
+    &quot;Application.CovariantReturnTypeEx1.executor&quot;: &quot;Run&quot;,
+    &quot;Application.DeadLockExample.executor&quot;: &quot;Run&quot;,
+    &quot;Application.DeepArrayCloning.executor&quot;: &quot;Run&quot;,
+    &quot;Application.DeepCopyManualEx1.executor&quot;: &quot;Run&quot;,
+    &quot;Application.DeepCopyWithCopyConstructor.executor&quot;: &quot;Run&quot;,
+    &quot;Application.Ex10CountDownLatch.executor&quot;: &quot;Run&quot;,
+    &quot;Application.Ex10EnumSetCollection.executor&quot;: &quot;Run&quot;,
+    &quot;Application.Ex11CountDownLatch.executor&quot;: &quot;Run&quot;,
+    &quot;Application.Ex11EnumSetMethods.executor&quot;: &quot;Run&quot;,
+    &quot;Application.Ex12CountDownLatchWithoutExecutor.executor&quot;: &quot;Run&quot;,
+    &quot;Application.Ex14CyclicBarrierUseCase.executor&quot;: &quot;Run&quot;,
+    &quot;Application.Ex15CompletableFuture.executor&quot;: &quot;Run&quot;,
+    &quot;Application.Ex15PushBackInputStream.executor&quot;: &quot;Run&quot;,
+    &quot;Application.Ex16CompletableFutureMethods.executor&quot;: &quot;Run&quot;,
+    &quot;Application.Ex1AtomicClasses.executor&quot;: &quot;Run&quot;,
+    &quot;Application.Ex1BeforeStreamApi.executor&quot;: &quot;Run&quot;,
+    &quot;Application.Ex1ByteStreams.executor&quot;: &quot;Run&quot;,
+    &quot;Application.Ex1Comparator.executor&quot;: &quot;Run&quot;,
+    &quot;Application.Ex1ComputerBuilder.executor&quot;: &quot;Run&quot;,
+    &quot;Application.Ex1ConsumerInterface.executor&quot;: &quot;Run&quot;,
+    &quot;Application.Ex1CreateNewFile.executor&quot;: &quot;Run&quot;,
+    &quot;Application.Ex1DaemonThread.executor&quot;: &quot;Run&quot;,
+    &quot;Application.Ex1Enum.executor&quot;: &quot;Run&quot;,
+    &quot;Application.Ex1ExecutorsFramework.executor&quot;: &quot;Run&quot;,
+    &quot;Application.Ex1FilesAndDirectoryHandling.executor&quot;: &quot;Run&quot;,
+    &quot;Application.Ex1Generics.executor&quot;: &quot;Run&quot;,
+    &quot;Application.Ex1HashCodeMethod.executor&quot;: &quot;Run&quot;,
+    &quot;Application.Ex1MethodReference.executor&quot;: &quot;Run&quot;,
+    &quot;Application.Ex1OptionalContainer.executor&quot;: &quot;Run&quot;,
+    &quot;Application.Ex1PredicateUsingLambda.executor&quot;: &quot;Run&quot;,
+    &quot;Application.Ex1RandomAccessFile.executor&quot;: &quot;Run&quot;,
+    &quot;Application.Ex1ReadFileUsingFileChannel.executor&quot;: &quot;Run&quot;,
+    &quot;Application.Ex1ReadWriteCounterWithLock.executor&quot;: &quot;Run&quot;,
+    &quot;Application.Ex1Record.executor&quot;: &quot;Run&quot;,
+    &quot;Application.Ex1Scanner.executor&quot;: &quot;Run&quot;,
+    &quot;Application.Ex1SealedClasses.executor&quot;: &quot;Run&quot;,
+    &quot;Application.Ex1Strings.executor&quot;: &quot;Run&quot;,
+    &quot;Application.Ex1SupplierInterface.executor&quot;: &quot;Run&quot;,
+    &quot;Application.Ex1Test.executor&quot;: &quot;Run&quot;,
+    &quot;Application.Ex1Volatile.executor&quot;: &quot;Run&quot;,
+    &quot;Application.Ex2AtomicityVolatileCounter.executor&quot;: &quot;Run&quot;,
+    &quot;Application.Ex2ByteStreamCopy.executor&quot;: &quot;Run&quot;,
+    &quot;Application.Ex2CharacterStreamWithBufferReader.executor&quot;: &quot;Run&quot;,
+    &quot;Application.Ex2CharacterStreams.executor&quot;: &quot;Run&quot;,
+    &quot;Application.Ex2CreateNewFile.executor&quot;: &quot;Run&quot;,
+    &quot;Application.Ex2EnumWithFieldsAndConstructor.executor&quot;: &quot;Run&quot;,
+    &quot;Application.Ex2FilterUsingStreamApi.executor&quot;: &quot;Run&quot;,
+    &quot;Application.Ex2GameSave.executor&quot;: &quot;Run&quot;,
+    &quot;Application.Ex2GenericSyntax.executor&quot;: &quot;Run&quot;,
+    &quot;Application.Ex2HashCodeNotUsed.executor&quot;: &quot;Run&quot;,
+    &quot;Application.Ex2MyComputerBuilder.executor&quot;: &quot;Run&quot;,
+    &quot;Application.Ex2PredicateUsingAnonymousClass.executor&quot;: &quot;Run&quot;,
+    &quot;Application.Ex2RecordUseCase.executor&quot;: &quot;Run&quot;,
+    &quot;Application.Ex2StringBuilder.executor&quot;: &quot;Run&quot;,
+    &quot;Application.Ex2UsingExecutorsFramework.executor&quot;: &quot;Run&quot;,
+    &quot;Application.Ex2WithCovariantType.executor&quot;: &quot;Run&quot;,
+    &quot;Application.Ex3BufferedInputStream.executor&quot;: &quot;Run&quot;,
+    &quot;Application.Ex3BufferedWriterCharacterStream.executor&quot;: &quot;Run&quot;,
+    &quot;Application.Ex3ConstructorReferenceMethod.executor&quot;: &quot;Run&quot;,
+    &quot;Application.Ex3EnumWithMethod.executor&quot;: &quot;Run&quot;,
+    &quot;Application.Ex3FixedLengthStructureRAF.executor&quot;: &quot;Run&quot;,
+    &quot;Application.Ex3GenericMethod.executor&quot;: &quot;Run&quot;,
+    &quot;Application.Ex3InstanceMethodReference.executor&quot;: &quot;Run&quot;,
+    &quot;Application.Ex3MethodChaining.executor&quot;: &quot;Run&quot;,
+    &quot;Application.Ex3ModernWayForHashCode.executor&quot;: &quot;Run&quot;,
+    &quot;Application.Ex3OpenFileUsingDesktop.executor&quot;: &quot;Run&quot;,
+    &quot;Application.Ex3ReturnWithExecutor.executor&quot;: &quot;Run&quot;,
+    &quot;Application.Ex3StringBufferThreadSafe.executor&quot;: &quot;Run&quot;,
+    &quot;Application.Ex3StringBuilderNotThreadSafe.executor&quot;: &quot;Run&quot;,
+    &quot;Application.Ex3WaysToGetStreamObject.executor&quot;: &quot;Run&quot;,
+    &quot;Application.Ex4ArrayConstructorReference.executor&quot;: &quot;Run&quot;,
+    &quot;Application.Ex4CovariantReturnTypeWithInterface.executor&quot;: &quot;Run&quot;,
+    &quot;Application.Ex4EnumMethods.executor&quot;: &quot;Run&quot;,
+    &quot;Application.Ex4ExecutorServiceMethod.executor&quot;: &quot;Run&quot;,
+    &quot;Application.Ex4GameMultiSaveSlotsUsingRAF.executor&quot;: &quot;Run&quot;,
+    &quot;Application.Ex4InputStreamReader.executor&quot;: &quot;Run&quot;,
+    &quot;Application.Ex4InstanceMethodReferenceClassArbitraryObject.executor&quot;: &quot;Run&quot;,
+    &quot;Application.Ex4InvokeAllMethod.executor&quot;: &quot;Run&quot;,
+    &quot;Application.Ex4MultipleTypeParameters.executor&quot;: &quot;Run&quot;,
+    &quot;Application.Ex4PipedInputAndOutputStreams.executor&quot;: &quot;Run&quot;,
+    &quot;Application.Ex4PipedStreamExample.executor&quot;: &quot;Run&quot;,
+    &quot;Application.Ex4ReadFileUsingFileInputStream.executor&quot;: &quot;Run&quot;,
+    &quot;Application.Ex4StreamApiMethods.executor&quot;: &quot;Run&quot;,
+    &quot;Application.Ex4StringPerformanceCalculator.executor&quot;: &quot;Run&quot;,
+    &quot;Application.Ex4ToStringMethod.executor&quot;: &quot;Run&quot;,
+    &quot;Application.Ex5BoundedTypeParameterUpperBound.executor&quot;: &quot;Run&quot;,
+    &quot;Application.Ex5EnumWithSwitch.executor&quot;: &quot;Run&quot;,
+    &quot;Application.Ex5MethodReferenceWithCustomClass.executor&quot;: &quot;Run&quot;,
+    &quot;Application.Ex5OutputStreamWriter.executor&quot;: &quot;Run&quot;,
+    &quot;Application.Ex5PipedInputAndOutputStreams.executor&quot;: &quot;Run&quot;,
+    &quot;Application.Ex5ReadFileUsingNIOPackage.executor&quot;: &quot;Run&quot;,
+    &quot;Application.Ex5StreamApiSortedMethod.executor&quot;: &quot;Run&quot;,
+    &quot;Application.Ex6BoundedTypeParameterLowerBound2.executor&quot;: &quot;Run&quot;,
+    &quot;Application.Ex6DataInputStreamAndDataOutputStream.executor&quot;: &quot;Run&quot;,
+    &quot;Application.Ex6EnumWithCustomBehaviourAndFields.executor&quot;: &quot;Run&quot;,
+    &quot;Application.Ex6ImageFileFormatConversion.executor&quot;: &quot;Run&quot;,
+    &quot;Application.Ex6InvokeAnyMethod.executor&quot;: &quot;Run&quot;,
+    &quot;Application.Ex6MethodReferenceWithStreamsAndCustomClass.executor&quot;: &quot;Run&quot;,
+    &quot;Application.Ex6StreamApiIntermediateOperations.executor&quot;: &quot;Run&quot;,
+    &quot;Application.Ex7DataInputAndOutputStreamUseCase.executor&quot;: &quot;Run&quot;,
+    &quot;Application.Ex7EnumWithInterfaces.executor&quot;: &quot;Run&quot;,
+    &quot;Application.Ex7GetMethodOfFuture.executor&quot;: &quot;Run&quot;,
+    &quot;Application.Ex7ProcessCustomObjectsUsingFunction.executor&quot;: &quot;Run&quot;,
+    &quot;Application.Ex7ScheduledExecutorService.executor&quot;: &quot;Run&quot;,
+    &quot;Application.Ex7StreamApiTerminalOperations.executor&quot;: &quot;Run&quot;,
+    &quot;Application.Ex7UpperAndLowerBoundParameters.executor&quot;: &quot;Run&quot;,
+    &quot;Application.Ex8EnumWithInterfaces.executor&quot;: &quot;Run&quot;,
+    &quot;Application.Ex8FilterInputStream.executor&quot;: &quot;Run&quot;,
+    &quot;Application.Ex8GenericInterfaces.executor&quot;: &quot;Run&quot;,
+    &quot;Application.ExCustomFilterStream.executor&quot;: &quot;Run&quot;,
+    &quot;Application.ExStreamApiLazyEvaluation.executor&quot;: &quot;Run&quot;,
+    &quot;Application.FairLockExample.executor&quot;: &quot;Run&quot;,
+    &quot;Application.HashCodeMethodEx1.executor&quot;: &quot;Run&quot;,
+    &quot;Application.HashCodeNotUsedEx.executor&quot;: &quot;Run&quot;,
+    &quot;Application.LambdaExample.executor&quot;: &quot;Run&quot;,
+    &quot;Application.Main.executor&quot;: &quot;Run&quot;,
+    &quot;Application.MarkerInterfaceEx1.executor&quot;: &quot;Run&quot;,
+    &quot;Application.MyThread.executor&quot;: &quot;Run&quot;,
+    &quot;Application.PipedStreamExample.executor&quot;: &quot;Run&quot;,
+    &quot;Application.ReflectionEx1.executor&quot;: &quot;Run&quot;,
+    &quot;Application.RobustCloneImplementationEx1.executor&quot;: &quot;Run&quot;,
+    &quot;Application.ShallowAndDeepCopyEx1.executor&quot;: &quot;Run&quot;,
+    &quot;Application.ShallowCopyProblemWithObjectArrays.executor&quot;: &quot;Run&quot;,
+    &quot;Application.StaticNestedClass.executor&quot;: &quot;Run&quot;,
+    &quot;Application.StaticNestedClassRealWorldCompleteEx2.executor&quot;: &quot;Run&quot;,
+    &quot;Application.StaticNestedClassRealWorldCompleteEx3.executor&quot;: &quot;Run&quot;,
+    &quot;Application.ThreadCommunication.executor&quot;: &quot;Run&quot;,
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.git.unshallow&quot;: &quot;true&quot;,
+    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
+    &quot;SONARLINT_PRECOMMIT_ANALYSIS&quot;: &quot;true&quot;,
+    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
+    &quot;dart.analysis.tool.window.visible&quot;: &quot;false&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;main&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/Users/iarsh/Downloads/LearnSpringFramework-master/0JavaProjects/JavaTutorial/src/main/java/org/akk/oop1_basic/i_strings&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.pluginManager&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
       <recent name="C:\Users\iarsh\Downloads\LearnSpringFramework-master\0JavaProjects\JavaTutorial\src\main\java\org\akk\oop1_basic\i_strings" />
@@ -311,7 +309,8 @@
       <workItem from="1764912029031" duration="8790000" />
       <workItem from="1765193889498" duration="1627000" />
       <workItem from="1765434173258" duration="9453000" />
-      <workItem from="1765537974658" duration="5383000" />
+      <workItem from="1765537974658" duration="6075000" />
+      <workItem from="1765544694184" duration="327000" />
     </task>
     <task id="LOCAL-00001" summary="Classes, Objects, Encapsulation and Abstraction Modules are created with examples">
       <option name="closed" value="true" />
@@ -665,7 +664,15 @@
       <option name="project" value="LOCAL" />
       <updated>1764941796659</updated>
     </task>
-    <option name="localTasksCounter" value="45" />
+    <task id="LOCAL-00045" summary="Input stream class examples">
+      <option name="closed" value="true" />
+      <created>1765544637192</created>
+      <option name="number" value="00045" />
+      <option name="presentableId" value="LOCAL-00045" />
+      <option name="project" value="LOCAL" />
+      <updated>1765544637192</updated>
+    </task>
+    <option name="localTasksCounter" value="46" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -683,7 +690,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="toString method example created" />
     <MESSAGE value="Covariant return type examples created" />
     <MESSAGE value="Basic Generic example of classes and methods are uploaded" />
     <MESSAGE value="Examples for Multiple type parameters created" />
@@ -708,7 +714,8 @@
     <MESSAGE value="Generics folder structure updated" />
     <MESSAGE value="Directory structure updated" />
     <MESSAGE value="Java io and File Handling" />
-    <option name="LAST_COMMIT_MESSAGE" value="Java io and File Handling" />
+    <MESSAGE value="Input stream class examples" />
+    <option name="LAST_COMMIT_MESSAGE" value="Input stream class examples" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
