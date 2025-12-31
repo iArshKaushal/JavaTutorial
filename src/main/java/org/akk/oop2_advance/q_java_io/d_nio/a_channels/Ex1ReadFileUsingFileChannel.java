@@ -4,6 +4,8 @@ import java.io.FileNotFoundException;
 import java.io.IOException;
 import java.io.RandomAccessFile;
 import java.nio.ByteBuffer;
+import java.nio.channels.Channel;
+import java.nio.channels.Channels;
 import java.nio.channels.FileChannel;
 
 import static org.akk.zz_utils.FilePaths.ROOT_FILE_PATH;
@@ -25,7 +27,6 @@ public class Ex1ReadFileUsingFileChannel {
                 }
                 buffer.clear(); // Prepare for next read
             }
-
         } catch (FileNotFoundException e) {
             throw new RuntimeException(e);
         } catch (IOException e) {

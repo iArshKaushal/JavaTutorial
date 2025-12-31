@@ -16,6 +16,14 @@ public class Ex6PushBackInputStream {
         ByteArrayInputStream array = new ByteArrayInputStream(ary);
         PushbackInputStream push = new PushbackInputStream(array);
 
+        /// Method 1 - available()
+        // It is used to return the number of bytes that can be read from the input stream.
+        System.out.println(push.available());
+
+
+        /// Method 2 - read() and unread()
+        // read() --> It is used to read the next byte of data from the input stream.
+        // unread() --> It is used to pushes back the byte by copying it to the pushback buffer.
         int i;
         while( (i = push.read())!= -1) {
             if(i == '#') {
@@ -27,8 +35,15 @@ public class Ex6PushBackInputStream {
                     System.out.print((char)i);
                 }
             }else {
-                System.out.println((char)i);
+                System.out.print((char)i);
             }
         }
+
+
+        /// Method 3-
+        // It is used to pushes back the byte by copying it to the pushback buffer.
+
+
+
     }
 }

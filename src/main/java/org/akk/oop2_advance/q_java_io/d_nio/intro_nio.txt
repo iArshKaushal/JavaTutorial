@@ -12,41 +12,44 @@ It supports:
 
 🔑 Key Concepts in Java NIO
 ===============================
-| Feature       | Java IO               | Java NIO                                  |
-| ------------- | --------------------- | ----------------------------------------- |
-| Mode          | **Stream-based**      | **Buffer-based**                          |
-| Blocking      | **Always blocking**   | **Non-blocking available**                |
-| Data Handling | One-way (read/write)  | Read/Write from **same object**           |
-| Multiplexing  | ❌ No                 | ✔ **Selector** supports multiple channels |
-| Performance   | Slower for large data | Faster, scalable                          |
-
+    | Feature       | Java IO               | Java NIO                                  |
+    | ------------- | --------------------- | ----------------------------------------- |
+    | Mode          | **Stream-based**      | **Buffer-based**                          |
+    | Blocking      | **Always blocking**   | **Non-blocking available**                |
+    | Data Handling | One-way (read/write)  | Read/Write from **same object**           |
+    | Multiplexing  | ❌ No                 | ✔ **Selector** supports multiple channels |
+    | Performance   | Slower for large data | Faster, scalable                          |
+    | ------------- | --------------------- | ----------------------------------------- |
 
 
 
 🧱 Core Components of Java NIO
 ====================================
-| Component        | Role                                               |
-| ---------------- | -------------------------------------------------- |
-| **Channel**      | Connection to read/write data (like a pipe)        |
-| **Buffer**       | Data container (memory block)                      |
-| **Selector**     | Handles multiple channels with a **single thread** |
-| **Path & Files** | Modern file handling utilities                     |
+    | Component        | Role                                               |
+    | ---------------- | -------------------------------------------------- |
+    |   Channel        | Connection to read/write data (like a pipe)        |
+    |   Buffer         | Data container (memory block)                      |
+    |   Selector       | Handles multiple channels with a **single thread** |
+    |   Path & Files   | Modern file handling utilities                     |
+    | ---------------- | -------------------------------------------------- |
 
 
+⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐
+    ⭐ - 1. CHANNEL
+⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐
 
-⭐ Channel
-==============
     🚦 What is a Channel in Java NIO?
     --------------------------------------
-    A Channel is a bi-directional communication interface used for reading and writing data between:
+    A Channel is a bi-directional (read + write) communication interface used for reading and writing data between:
         ✔ Files
         ✔ Sockets
         ✔ Devices (like network connections)
 
     📌 Unlike InputStream and OutputStream (which are one-way), a Channel can read AND write — often at the same time.
-    📌 Channels work with Buffers — data always goes:
 
-    Channel ⇄ Buffer ⇄ Application
+    📌 Channels work with Buffers — data always goes:
+        Channel ⇄ Buffer ⇄ Application
+
     📌 Channels are non-blocking & selectable, making them perfect for high-performance servers.
 
 
@@ -72,44 +75,54 @@ It supports:
     | `Pipe.SinkChannel / Pipe.SourceChannel` | IPC (thread-to-thread communication)    |
     | `AsynchronousFileChannel`               | Asynchronous file I/O                   |
     | `AsynchronousSocketChannel`             | Async network I/O                       |
-
+    | --------------------------------------- | --------------------------------------- |
 
 
 📌 How the Channel Works with Buffer
 =======================================
 Basic data flow:
+    int bytesRead = channel.read(buffer);   // Read data into buffer
+    buffer.flip();                           // Prepare for read by app
+    buffer.get();                            // App reads data
+    buffer.clear();                          // Prepare for next read
 
-int bytesRead = channel.read(buffer);   // Read data into buffer
-buffer.flip();                           // Prepare for read by app
-buffer.get();                            // App reads data
-buffer.clear();                          // Prepare for next read
-
-➡ flip() and clear() are critical for switching buffer modes.
-
-
-
-
-
-
-
+    ➡ flip() and clear() are critical for switching buffer modes.
 
 
 🎛 Channel Modes
 =================
-
-| Mode         | Meaning                                     |
-| ------------ | ------------------------------------------- |
-| Blocking     | Channel waits for operations to finish      |
-| Non-blocking | Channel returns immediately even if no data |
-
-
-
+    | ------------ | ------------------------------------------- |
+    | Mode         | Meaning                                     |
+    | ------------ | ------------------------------------------- |
+    | Blocking     | Channel waits for operations to finish      |
+    | Non-blocking | Channel returns immediately even if no data |
+    | ------------ | ------------------------------------------- |
 
 
 
+⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐
+    ⭐ - 2. SELECTORS
+⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐
 
+🌟 What is a Selector in Java NIO?
+==================================
+    Selector = a single thread that can watch MANY channels at the same time
+    Selector allows one thread to monitor multiple network connections (channels) and know:
+        - which one (channel) is ready to read
+        - which one (channel) is ready to write
+        - which one (channel) is ready to accept new connections
+    This is called multiplexing.
 
+    ❌ Problem with Traditional IO (Blocking IO)
+        Traditional Server Model (Old IO)
+            1 client  → 1 thread
+            1000 clients → 1000 threads 😨
 
+        Problems:
+            - Too many threads
+            - High memory usage
+            - Context switching overhead
+            - Server crashes under load
 
 
 
